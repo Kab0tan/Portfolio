@@ -1,0 +1,49 @@
+@import '@assets/theme.scss';
+
+.themed-card {
+  background-color: $dark-text-color;
+  border-radius: 20px;
+  width: 85em;
+  height: 30em;
+  overflow: hidden;
+
+  &__row {
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: 100%;
+
+    &--title {
+      flex: 0 0 10%;
+      font-size: 3em;
+      color: $dark-text-color-secondary;
+    }
+    &--description {
+      flex: 1;
+      font-size: 1em;
+    }
+    &--icons {
+      flex: 0 0 15%;
+      font-size: 4em;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.img {
+  background-color: grey;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+}

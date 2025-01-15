@@ -8,8 +8,8 @@
             <RouterLink to="/experience" class="nav-text">Experience</RouterLink>
             <RouterLink to="/portfolio" class="nav-text">Portfolio</RouterLink>
             <RouterLink to="/contact" class="nav-text">Contact</RouterLink>
-            <FontAwesomeIcon icon="fa-brands fa-github" />
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+            <FontAwesomeIcon icon="fa-brands fa-github" class="nav-text--icon" />
+            <FontAwesomeIcon icon="fa-brands fa-linkedin" class="nav-text--icon" />
           </div>
         </ElCol>
         <ElCol :span="6" :offset="10">
