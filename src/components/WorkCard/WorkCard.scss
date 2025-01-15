@@ -1,0 +1,30 @@
+@import '@assets/theme.scss';
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  //   height: 200px;
+  width: 100%;
+  background-color: $dark-text-color;
+  border-radius: 15px;
+  z-index: 1000;
+
+  &--title {
+    font-size: 2em;
+    border-bottom: 1px solid $dark-text-color-secondary;
+    margin-bottom: 10px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &--tag {
+      border-radius: 50px;
+      border: 1px solid $dark-text-color-secondary;
+      padding: 0.2em 0.5em;
+    }
+  }
+}

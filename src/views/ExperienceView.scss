@@ -1,0 +1,55 @@
+@import '@assets/theme.scss';
+
+.experience {
+  margin-top: 70px; //header height
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 2em 6em;
+    height: 330px;
+    background-color: $dark-background-color;
+
+    &--title {
+      font-size: 4em;
+      color: $dark-text-color;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 6em;
+    background-color: $dark-primary-color;
+
+    &--title {
+      font-size: 5em;
+      color: $dark-text-color;
+    }
+    &__container {
+      display: flex;
+      height: 800px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.dot-timeline {
+  position: relative;
+  left: 100px;
+  height: 100%;
+  border-left: 5px dotted rgb(79, 79, 79);
+}
+
+.cards-container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
