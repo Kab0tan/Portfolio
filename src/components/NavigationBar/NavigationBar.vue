@@ -8,10 +8,32 @@
             <RouterLink to="/experience" class="nav-text">Experience</RouterLink>
             <RouterLink to="/portfolio" class="nav-text">Portfolio</RouterLink>
             <RouterLink to="/contact" class="nav-text">Contact</RouterLink>
+            <FontAwesomeIcon icon="fa-brands fa-github" />
+            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
           </div>
         </ElCol>
         <ElCol :span="6" :offset="10">
-          <div class="nav-right">OUI</div>
+          <div class="nav-right">
+            <ElSwitch v-model="screenMode" active-value="dark" inactive-value="light" />
+            <ElSwitch
+              v-model="locale"
+              active-value="en"
+              inactive-value="fr"
+              inline-prompt
+              active-text="en"
+              inactive-text="fr"
+            />
+            <button class="nav-btn--resume">
+              Resume
+              <FlagIcon code="gb" />
+              <FontAwesomeIcon icon="fa-solid fa-download" />
+            </button>
+            <button class="nav-btn--resume">
+              Resume
+              <FlagIcon code="fr" />
+              <FontAwesomeIcon icon="fa-solid fa-download" />
+            </button>
+          </div>
         </ElCol>
       </ElRow>
     </nav>
@@ -20,4 +42,12 @@
 
 <script setup lang="ts">
 import './NavigationBar.scss'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import FlagIcon from 'vue3-flag-icons'
+import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
+
+const { locale } = useI18n({ useScope: 'global' })
+
+const screenMode = ref('light')
 </script>
