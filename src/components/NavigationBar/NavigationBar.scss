@@ -18,8 +18,14 @@ a {
 
 .nav-container {
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
+.nav-row {
+  width: 100%;
+}
 .nav-left {
   display: flex;
   height: 100%;
@@ -43,6 +49,8 @@ a {
 
   &--icon {
     font-size: 1.5em;
+    padding: 7px 15px;
+    cursor: pointer;
   }
 }
 
@@ -53,7 +61,7 @@ a {
 .nav-btn {
   &--resume {
     border: 3px solid white;
-    padding: 10px 15px;
+    // padding: 5px 15px;
     border-radius: 7px;
     transition: all 0.5s ease;
   }

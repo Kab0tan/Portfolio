@@ -1,15 +1,23 @@
 <template>
   <header class="header">
     <nav class="nav-container">
-      <ElRow :gutter="0">
+      <ElRow :gutter="0" class="nav-row">
         <ElCol :span="8">
           <div class="nav-left">
             <RouterLink to="/" class="nav-text">About</RouterLink>
             <RouterLink to="/experience" class="nav-text">Experience</RouterLink>
             <RouterLink to="/portfolio" class="nav-text">Portfolio</RouterLink>
             <RouterLink to="/contact" class="nav-text">Contact</RouterLink>
-            <FontAwesomeIcon icon="fa-brands fa-github" class="nav-text--icon" />
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" class="nav-text--icon" />
+            <FontAwesomeIcon
+              @click="handleLinkGithub"
+              icon="fa-brands fa-github"
+              class="nav-text--icon"
+            />
+            <FontAwesomeIcon
+              @click="handleLinkLinkedin"
+              icon="fa-brands fa-linkedin"
+              class="nav-text--icon"
+            />
           </div>
         </ElCol>
         <ElCol :span="6" :offset="10">
@@ -50,4 +58,11 @@ import { ref } from 'vue'
 const { locale } = useI18n({ useScope: 'global' })
 
 const screenMode = ref('light')
+
+const handleLinkGithub = () => {
+  console.log('github')
+}
+const handleLinkLinkedin = () => {
+  console.log('linkedin')
+}
 </script>
