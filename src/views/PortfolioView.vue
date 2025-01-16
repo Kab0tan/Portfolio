@@ -1,9 +1,8 @@
 <template>
   <div class="portfolio">
     <div class="portfolio__header">
-      <span class="porto folio__header--title"> {{ t('porto folio.h1') }} </span>
-      <span class="porto folio__header--subtitle"> Justin Leddet. </span>
-      <span class="porto folio__header--subtitle"> {{ t('porto folio.title') }}</span>
+      <span class="portfolio__header--title"> {{ t('portfolio.title') }} </span>
+      <span class="portfolio__header--subtitle"> {{ t('portfolio.subtitle') }}</span>
     </div>
     <div class="portfolio__content">
       <span class="portfolio__content--title">Portfolio</span>

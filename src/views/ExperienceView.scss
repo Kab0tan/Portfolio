@@ -11,11 +11,11 @@
     background-color: $dark-background-color;
 
     &--title {
-      font-size: 2em;
+      font-size: $title;
       color: $dark-text-color;
     }
     &--subtitle {
-      font-size: 1em;
+      font-size: $subtitle-small;
       color: $dark-text-color;
     }
   }
@@ -28,8 +28,9 @@
     background-color: $dark-primary-color;
 
     &--title {
-      font-size: 4em;
+      font-size: $title;
       color: $dark-text-color;
+      margin: 1em 0;
     }
     &__container {
       display: flex;
@@ -45,7 +46,15 @@
   position: relative;
   left: 100px;
   height: 100%;
-  border-left: 5px dotted rgb(79, 79, 79);
+  border-left: 4px solid transparent;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3),
+      rgb(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.3)
+    )
+    center/10px 100% no-repeat;
+  border-radius: 2px;
 }
 
 .cards-container {

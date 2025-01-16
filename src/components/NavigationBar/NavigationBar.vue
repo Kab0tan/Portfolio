@@ -20,9 +20,9 @@
             />
           </div>
         </ElCol>
-        <ElCol :span="6" :offset="10">
+        <ElCol :span="8" :offset="8">
           <div class="nav-right">
-            <ElSwitch v-model="screenMode" active-value="dark" inactive-value="light" />
+            <ThemedSwitch :size="36" v-model:model-value="screenMode" />
             <ElSwitch
               v-model="locale"
               active-value="en"
@@ -34,12 +34,10 @@
             <button class="nav-btn--resume">
               Resume
               <FlagIcon code="gb" />
-              <FontAwesomeIcon icon="fa-solid fa-download" />
             </button>
             <button class="nav-btn--resume">
               Resume
               <FlagIcon code="fr" />
-              <FontAwesomeIcon icon="fa-solid fa-download" />
             </button>
           </div>
         </ElCol>
@@ -51,13 +49,14 @@
 <script setup lang="ts">
 import './NavigationBar.scss'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
 import FlagIcon from 'vue3-flag-icons'
 import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
 
 const { locale } = useI18n({ useScope: 'global' })
 
-const screenMode = ref('light')
+const screenMode = ref(false) //false = dark mode
 
 const handleLinkGithub = () => {
   console.log('github')

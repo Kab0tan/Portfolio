@@ -13,14 +13,15 @@ export default createI18n({
       },
       experience: {
         title: 'Experience',
-        subtitle: 'Oui oui très bien',
+        subtitle:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
         career: 'Careers',
         formation: 'Education',
       },
       portfolio: {
-        h1: 'Hi, my name is',
         title: 'Portfolio',
-        subtitle: 'Oui oui vraiment très bien',
+        subtitle:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
       },
     },
     fr: {
@@ -36,7 +37,6 @@ export default createI18n({
         formation: 'Formation',
       },
       portfolio: {
-        h1: "Bonjour, je m'appelle",
         title: 'Portfolio',
         subtitle: 'Oui oui vraiment très bien',
       },

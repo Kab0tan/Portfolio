@@ -11,12 +11,12 @@
     background-color: $dark-background-color;
 
     &--title {
-      font-size: 2em;
+      font-size: $title;
       color: $dark-accent-color;
     }
 
     &--subtitle {
-      font-size: 3em;
+      font-size: $subtitle-large;
       color: $dark-text-color;
     }
   }
@@ -29,7 +29,7 @@
     background-color: $dark-primary-color;
 
     &--title {
-      font-size: 4em;
+      font-size: $title;
       color: $dark-text-color;
     }
 

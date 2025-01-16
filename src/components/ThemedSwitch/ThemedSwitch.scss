@@ -1,0 +1,47 @@
+@import '@assets/theme.scss';
+
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: var(--size);
+  height: calc(var(--size) * 0.566666667); /* Maintain aspect ratio */
+}
+.custom-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #2b4485, #afcaff);
+  border-radius: calc(var(--size) * 0.566666667); /* Maintain rounded corners */
+  transition: 0.3s;
+}
+
+.custom-switch input:checked + .switch-slider {
+  background: linear-gradient(to bottom, #66ffed, #ffeeb2);
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: '';
+  height: calc(var(--size) * 0.433333333); /* Maintain aspect ratio */
+  width: calc(var(--size) * 0.433333333);
+  left: calc(var(--size) * 0.066666667);
+  bottom: calc(var(--size) * 0.066666667);
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.custom-switch input:checked + .switch-slider:before {
+  background-color: $light-text-color;
+}
+
+.custom-switch input:checked + .switch-slider:before {
+  transform: translateX(calc(var(--size) * 0.4));
+}
