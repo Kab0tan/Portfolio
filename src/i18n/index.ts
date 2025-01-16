@@ -17,6 +17,11 @@ export default createI18n({
         career: 'Careers',
         formation: 'Education',
       },
+      portfolio: {
+        h1: 'Hi, my name is',
+        title: 'Portfolio',
+        subtitle: 'Oui oui vraiment très bien',
+      },
     },
     fr: {
       messages: {},
@@ -29,6 +34,11 @@ export default createI18n({
         subtitle: 'Oui oui très bien',
         career: 'Parcours professionnel',
         formation: 'Formation',
+      },
+      portfolio: {
+        h1: "Bonjour, je m'appelle",
+        title: 'Portfolio',
+        subtitle: 'Oui oui vraiment très bien',
       },
     },
   },

@@ -3,8 +3,8 @@
 .themed-card {
   background-color: $dark-text-color;
   border-radius: 20px;
-  width: 85em;
-  height: 30em;
+  width: 60em;
+  height: 20em;
   overflow: hidden;
 
   &__row {
@@ -38,6 +38,18 @@
     align-items: center;
     height: 100%;
     width: 100%;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &--tag {
+      border-radius: 50px;
+      border: 1px solid $dark-text-color-secondary;
+      padding: 0.2em 0.5em;
+    }
   }
 }
 

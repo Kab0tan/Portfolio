@@ -1,24 +1,22 @@
 @import '@assets/theme.scss';
 
 .about {
-  margin-top: 70px; //header height
-
   &__header {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    padding: 2em 6em;
+    padding: 6em;
     height: 330px;
     background-color: $dark-background-color;
 
-    &--h1 {
-      font-size: 3em;
+    &--title {
+      font-size: 2em;
       color: $dark-accent-color;
     }
 
-    &--text {
-      font-size: 4em;
+    &--subtitle {
+      font-size: 3em;
       color: $dark-text-color;
     }
   }
@@ -31,7 +29,7 @@
     background-color: $dark-primary-color;
 
     &--title {
-      font-size: 5em;
+      font-size: 4em;
       color: $dark-text-color;
     }
 
