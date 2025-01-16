@@ -1,26 +1,52 @@
 <template>
   <div class="contact">
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
-    <h1>This is an contact page</h1>
+    <div class="contact__content">
+      <span class="contact__content--title">Get in touch</span>
+      <div class="contact__content__inputs">
+        <ElInput
+          v-model="inputName"
+          resize="none"
+          type="textarea"
+          :rows="1"
+          placeholder="Your name"
+          class="contact__content--input"
+        />
+        <ElInput
+          v-model="inputEmail"
+          resize="none"
+          type="textarea"
+          :rows="1"
+          placeholder="Your email"
+          class="contact__content--input"
+        />
+        <ElInput
+          v-model="inputMessage"
+          type="textarea"
+          autosize
+          :rows="1"
+          placeholder="Your message"
+          class="contact__content--input"
+        />
+      </div>
+      <button class="contact__content--btn" @click="handleSubmit">
+        Send message
+        <FontAwesomeIcon icon="fa-solid fa-arrow-right-long" />
+      </button>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import './ContactView.scss'
+import { ref } from 'vue'
+import { ElInput } from 'element-plus'
+
+const inputName = ref('')
+const inputEmail = ref('')
+const inputMessage = ref('')
+
+const handleSubmit = () => {
+  console.log('submit')
+}
+</script>
