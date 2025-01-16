@@ -1,7 +1,10 @@
 <template>
   <div class="contact">
     <div class="contact__content">
-      <span class="contact__content--title">Get in touch</span>
+      <span class="contact__content--title">{{ t('contact.title') }}</span>
+      <span class="contact__content--subtitle">
+        {{ t('contact.subtitle') }}
+      </span>
       <div class="contact__content__inputs">
         <ElInput
           v-model="inputName"
@@ -41,6 +44,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './ContactView.scss'
 import { ref } from 'vue'
 import { ElInput } from 'element-plus'
+
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 const inputName = ref('')
 const inputEmail = ref('')
