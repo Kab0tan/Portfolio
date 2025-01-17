@@ -10,10 +10,7 @@
       {{ description }}
     </div>
     <div class="work-card--skills">
-      <span>Skills acquired :</span>
-      <ElCol v-for="skill in skills" :key="skill" class="work-card--skills--skill">
-        {{ skill }}
-      </ElCol>
+      <span>Skills acquired : {{ skills }}</span>
     </div>
   </div>
 </template>
@@ -39,7 +36,7 @@ defineProps({
     required: true,
   },
   skills: {
-    type: Array<string>,
+    type: String,
     required: false,
   },
 })

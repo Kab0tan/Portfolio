@@ -25,12 +25,9 @@ In addition, I remain curious and actively seek to learn about other topics that
         left: 'true',
       },
       {
-        title: 'Video',
-        description: `I'm also passionate about photography and video, but mainly photography. 
-        I had the chance to develop this passion through my studies at Grenoble in the 
-        audiovisual association of Grenoble-INP where i was Vice President between 2021-2022.
-         I had the opportunity to cover various students events and competitions.
-          It was also the opportunity to develop my skills in photography and video.`,
+        title: 'Coding problems',
+        description: `A thing that I really enjoy is solving coding problems. I usually do leetcode in various languages, but also every year Adevent of Code.
+        It's a yearly contest where you have to solve different algorithmic problems during 25 days.`,
         link: '',
         left: 'false',
       },

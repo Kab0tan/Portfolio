@@ -1,5 +1,7 @@
 import { createI18n } from 'vue-i18n'
 import { ABOUT_TEXTS } from '@assets/constants/AboutTexts.ts'
+import { EXPERIENCE_TEXTS } from '@assets/constants/ExperienceTexts.ts'
+import { PORTFOLIO_TEXTS } from '@assets/constants/PortfolioTexts.ts'
 
 export default createI18n({
   locale: 'en',
@@ -14,16 +16,17 @@ export default createI18n({
         content: ABOUT_TEXTS.en.CONTENT,
       },
       experience: {
-        title: 'Experience',
-        subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
-        career: 'Careers',
-        formation: 'Education',
+        title: EXPERIENCE_TEXTS.en.title,
+        subtitle: EXPERIENCE_TEXTS.en.subtitle,
+        careerTitle: EXPERIENCE_TEXTS.en.careerTitle,
+        educationTitle: EXPERIENCE_TEXTS.en.educationTitle,
+        career: EXPERIENCE_TEXTS.en.career,
+        education: EXPERIENCE_TEXTS.en.education,
       },
       portfolio: {
-        title: 'Portfolio',
-        subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
+        title: PORTFOLIO_TEXTS.en.title,
+        subtitle: PORTFOLIO_TEXTS.en.subtitle,
+        content: PORTFOLIO_TEXTS.en.content,
       },
       contact: {
         title: 'Get in touch',
@@ -42,14 +45,17 @@ export default createI18n({
         description: ABOUT_TEXTS.fr.DESCRIPTION,
       },
       experience: {
-        title: 'Expérience',
-        subtitle: 'Oui oui très bien',
-        career: 'Parcours professionnel',
-        formation: 'Formation',
+        title: EXPERIENCE_TEXTS.fr.title,
+        subtitle: EXPERIENCE_TEXTS.fr.subtitle,
+        careerTitle: EXPERIENCE_TEXTS.fr.careerTitle,
+        educationTitle: EXPERIENCE_TEXTS.fr.educationTitle,
+        career: EXPERIENCE_TEXTS.fr.career,
+        education: EXPERIENCE_TEXTS.fr.education,
       },
       portfolio: {
-        title: 'Portfolio',
-        subtitle: 'Oui oui vraiment très bien',
+        title: PORTFOLIO_TEXTS.fr.title,
+        subtitle: PORTFOLIO_TEXTS.fr.subtitle,
+        content: PORTFOLIO_TEXTS.fr.content,
       },
       contact: {
         title: 'Contact',

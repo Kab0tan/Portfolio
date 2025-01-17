@@ -18,6 +18,11 @@
       font-size: $subtitle-large;
       color: $dark-text-color;
     }
+
+    &--description {
+      margin-top: 2em;
+      color: $dark-text-color;
+    }
   }
 
   &__content {
