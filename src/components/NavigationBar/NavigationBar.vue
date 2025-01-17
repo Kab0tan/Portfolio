@@ -40,7 +40,6 @@
         </ElCol>
         <ElCol :span="8" :offset="8">
           <div class="nav-right">
-            <ThemedSwitch :size="36" v-model:model-value="screenMode" />
             <ElSwitch
               v-model="locale"
               active-value="en"
@@ -48,7 +47,9 @@
               inline-prompt
               active-text="en"
               inactive-text="fr"
+              class="test"
             />
+            <ThemedSwitch :size="36" v-model:model-value="screenMode" />
             <button class="nav-btn--resume">
               Resume
               <FlagIcon code="gb" />
@@ -81,10 +82,10 @@ const screenMode = ref(false) //false = dark mode
 const currentRouteName = computed(() => router.currentRoute.value.name)
 
 const handleLinkGithub = () => {
-  console.log('github')
+  window.open('https://github.com/Kab0tan', '_blank')
 }
 const handleLinkLinkedin = () => {
-  console.log('linkedin')
+  window.open('https://www.linkedin.com/in/justin-leddet', '_blank')
 }
 
 const handleHighlight = (routeName: string) => {

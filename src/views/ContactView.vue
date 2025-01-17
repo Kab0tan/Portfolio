@@ -11,7 +11,7 @@
           resize="none"
           type="textarea"
           :rows="1"
-          placeholder="Your name"
+          :placeholder="t('contact.placeholderName')"
           class="contact__content--input"
         />
         <ElInput
@@ -19,7 +19,7 @@
           resize="none"
           type="textarea"
           :rows="1"
-          placeholder="Your email"
+          :placeholder="t('contact.placeholderEmail')"
           class="contact__content--input"
         />
         <ElInput
@@ -27,12 +27,12 @@
           type="textarea"
           autosize
           :rows="1"
-          placeholder="Your message"
+          :placeholder="t('contact.placeholderMessage')"
           class="contact__content--input"
         />
       </div>
       <button class="contact__content--btn" @click="handleSubmit">
-        Send message
+        {{ t('contact.submit') }}
         <FontAwesomeIcon icon="fa-solid fa-arrow-right-long" />
       </button>
     </div>

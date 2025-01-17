@@ -22,3 +22,9 @@ $subtitle-small: 1em;
 $large: 3em;
 $medium: 2em;
 $small: 1em;
+
+$dark-gradient: linear-gradient(to bottom, $dark-background-color, $dark-secondary-color);
+$light-gradient: linear-gradient(to bottom, $light-background-color, $light-secondary-color);
+
+$dark-gradient-alt: linear-gradient(to bottom, #2b4485, #afcaff);
+$light-gradient-alt: linear-gradient(to bottom, #66ffed, #ffeeb2);

@@ -1,4 +1,5 @@
 import { createI18n } from 'vue-i18n'
+import { ABOUT_TEXTS } from '@assets/constants/AboutTexts.ts'
 
 export default createI18n({
   locale: 'en',
@@ -7,8 +8,10 @@ export default createI18n({
   messages: {
     en: {
       about: {
-        h1: 'Hi, my name is',
-        title: "I'm a software engineer.",
+        h1: ABOUT_TEXTS.en.H1,
+        title: ABOUT_TEXTS.en.TITLE,
+        description: ABOUT_TEXTS.en.DESCRIPTION,
+        content: ABOUT_TEXTS.en.CONTENT,
       },
       experience: {
         title: 'Experience',
@@ -26,12 +29,17 @@ export default createI18n({
         title: 'Get in touch',
         subtitle:
           "Feel free to contact me ! I'm open to all opportunities, or if you have any question on a project i'll be happy to answer.",
+        placeholderName: 'Your name',
+        placeholderEmail: 'Your email',
+        placeholderMessage: 'Your message',
+        submit: 'Send message',
       },
     },
     fr: {
       about: {
-        h1: "Bonjour, je m'appelle",
-        title: 'Je suis un ingénieur logiciel.',
+        h1: ABOUT_TEXTS.fr.H1,
+        title: ABOUT_TEXTS.fr.TITLE,
+        description: ABOUT_TEXTS.fr.DESCRIPTION,
       },
       experience: {
         title: 'Expérience',
@@ -47,6 +55,10 @@ export default createI18n({
         title: 'Contact',
         subtitle:
           "N'hésitez pas à me contacter ! Je suis ouvert aux opportunités et je serai ravi de répondre à vos questions sur un projet si vous en avez.",
+        placeholderName: 'Votre nom',
+        placeholderEmail: 'Votre email',
+        placeholderMessage: 'Votre message',
+        submit: 'Envoyer',
       },
     },
   },

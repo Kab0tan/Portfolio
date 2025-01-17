@@ -4,18 +4,17 @@
       <span class="about__header--title"> {{ t('about.h1') }} </span>
       <span class="about__header--subtitle"> Justin Leddet. </span>
       <span class="about__header--subtitle"> {{ t('about.title') }}</span>
+      <span class="about__header--description">{{ t('about.description') }}</span>
     </div>
     <div class="about__content">
       <span class="about__content--title">Hobbies</span>
       <div class="about__content--cards">
         <ThemedCard
-          title="Photographie"
-          description="Je suis passionné par la photographie et la vidéo."
-        />
-        <ThemedCard
-          :left="false"
-          title="Coding Problems"
-          description="Je fais des Leecode et du Advent Of Code."
+          v-for="msg in tm('about.content')"
+          :key="msg"
+          :title="rt(msg.title)"
+          :description="rt(msg.description)"
+          :left="handleLeftCard(rt(msg.left))"
         />
       </div>
     </div>
@@ -27,5 +26,10 @@ import './AboutView.scss'
 import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
 
 import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
+const { t, tm, rt } = useI18n()
+
+const handleLeftCard = (left: string) => {
+  if (left === 'true') return true
+  return false
+}
 </script>

@@ -1,0 +1,79 @@
+@import '@assets/theme.scss';
+
+.custom-switch-lg {
+  position: relative;
+  display: inline-block;
+  width: var(--size); /* Use a CSS variable for size */
+  height: calc(var(--size) * 0.566666667); /* Maintain aspect ratio */
+}
+
+.custom-switch-lg input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider-lg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  --bg-color-on: #f36f25;
+  --bg-color-off: #ccc;
+  background: var(--bg-color-on);
+  border-radius: calc(var(--size) * 0.566666667); /* Rounded corners */
+  transition: 0.3s ease;
+}
+
+.custom-switch-lg input:checked + .switch-slider-lg {
+  background: var(--bg-color-off);
+}
+
+.switch-slider-lg:before {
+  position: absolute;
+  content: '';
+  height: calc(var(--size) * 0.433333333); /* Maintain aspect ratio */
+  width: calc(var(--size) * 0.433333333);
+  left: calc(var(--size) * 0.066666667);
+  bottom: calc(var(--size) * 0.066666667);
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.custom-switch-lg input:checked + .switch-slider-lg:before {
+  transform: translateX(calc(var(--size) * 0.4));
+  background-color: #fff;
+}
+
+.custom-switch-lg > span {
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: calc(var(--size) * 0.15);
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  width: 50%;
+  text-align: center;
+}
+
+.custom-switch-lg > span.on {
+  left: 0;
+  color: var(--on-color, #fff);
+}
+
+.custom-switch-lg > span.off {
+  right: 0;
+  color: var(--off-color, #f36f25);
+}
+
+.custom-switch-lg input:checked ~ .off {
+  color: var(--off-color-active, #f36f25);
+}
+
+.custom-switch-lg input:checked ~ .on {
+  color: var(--on-color-active, #fff);
+}

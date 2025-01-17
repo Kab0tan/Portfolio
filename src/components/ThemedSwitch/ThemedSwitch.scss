@@ -18,18 +18,21 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, #2b4485, #afcaff);
+  --bg-color-on: #{$dark-gradient-alt};
+  --bg-color-off: #{$light-gradient-alt};
+  background: var(--bg-color-on);
   border-radius: calc(var(--size) * 0.566666667); /* Maintain rounded corners */
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .custom-switch input:checked + .switch-slider {
-  background: linear-gradient(to bottom, #66ffed, #ffeeb2);
+  background: var(--bg-color-off);
 }
 
 .switch-slider:before {
   position: absolute;
   content: '';
+  font-size: calc(var(--size) * 0.25);
   height: calc(var(--size) * 0.433333333); /* Maintain aspect ratio */
   width: calc(var(--size) * 0.433333333);
   left: calc(var(--size) * 0.066666667);

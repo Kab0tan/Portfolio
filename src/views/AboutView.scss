@@ -7,7 +7,6 @@
     align-items: start;
     justify-content: start;
     padding: 6em;
-    height: 330px;
     background-color: $dark-background-color;
 
     &--title {
@@ -31,6 +30,7 @@
     &--title {
       font-size: $title;
       color: $dark-text-color;
+      margin: 1em 0;
     }
 
     &--cards {

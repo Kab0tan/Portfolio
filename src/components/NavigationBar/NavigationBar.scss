@@ -77,3 +77,10 @@ a {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
+
+.el-switch.test {
+  --el-switch-on-color: #{$dark-gradient-alt};
+  --el-switch-off-color: #{$dark-gradient-alt};
+  // --el-switch-on-color: #{$dark-secondary-color};
+  // --el-switch-off-color: #{$dark-secondary-color};
+}
