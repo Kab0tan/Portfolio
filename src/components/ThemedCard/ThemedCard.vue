@@ -1,6 +1,6 @@
 <template>
   <div class="themed-card">
-    <ElRow v-if="left" justify="center" class="themed-card__row">
+    <ElRow v-if="handleLeftCard()" justify="center" class="themed-card__row">
       <ElCol :span="16">
         <div class="themed-card__content">
           <div class="themed-card__content--title">{{ title }}</div>
@@ -57,10 +57,10 @@ interface Tag {
   name: string
 }
 
-defineProps({
+const { left, title, description, tags, icons } = defineProps({
   left: {
-    type: Boolean,
-    default: true,
+    type: String,
+    default: 'true',
   },
   title: {
     type: String,
@@ -83,4 +83,9 @@ defineProps({
   //   required: true,
   // },
 })
+
+const handleLeftCard = () => {
+  if (left === 'true') return true
+  return false
+}
 </script>

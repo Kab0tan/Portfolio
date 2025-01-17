@@ -14,7 +14,7 @@
           :key="msg"
           :title="rt(msg.title)"
           :description="rt(msg.description)"
-          :left="handleLeftCard(rt(msg.left))"
+          :left="rt(msg.left)"
         />
       </div>
     </div>
@@ -27,9 +27,4 @@ import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
-
-const handleLeftCard = (left: string) => {
-  if (left === 'true') return true
-  return false
-}
 </script>
