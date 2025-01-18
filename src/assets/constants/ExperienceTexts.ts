@@ -1,8 +1,12 @@
 export const EXPERIENCE_TEXTS = {
   en: {
     title: 'Experience',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
+    subtitle: `I recently completed my engineering studies and I'm excited to take the next step in my 
+    career to work in the Tech industrie. Through my studies and personal projects, I've developed my skills
+    in programming and web development, and I'm eager to continue learning and growing in this field.
+    I'm passionate about crafting efficient and innovative solutions while continusly learning and staying
+    informed about the latest advancements in the industry.
+    Below, you’ll find a summary of my educational background and professional experiences.`,
     careerTitle: 'Careers',
     educationTitle: 'Education',
     career: [
@@ -22,7 +26,7 @@ export const EXPERIENCE_TEXTS = {
         using deep neural networks with Python. The research focused on detecting and classifying
         human emotions in audio speeches.`,
         subjects:
-          'Python • AI • Deep Learning • NLP • Matplotlib • Git • Numpy • Pandas • Tensorflow • Scikit-learn',
+          'Python • AI • Deep Learning • NLP • Matplotlib • Git • Numpy • Pandas • Keras • Tensorflow • Scikit-learn',
       },
     ],
     education: [

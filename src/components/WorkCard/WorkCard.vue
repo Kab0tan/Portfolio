@@ -10,7 +10,7 @@
       {{ description }}
     </div>
     <div class="work-card--skills">
-      <span>Skills acquired : {{ skills }}</span>
+      <span>Subjects : {{ skills }}</span>
     </div>
   </div>
 </template>
