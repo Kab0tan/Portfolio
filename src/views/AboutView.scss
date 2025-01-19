@@ -7,21 +7,21 @@
     align-items: start;
     justify-content: start;
     padding: 6em;
-    background-color: $dark-background-color;
+    background-color: var(--background-color);
 
     &--title {
       font-size: $title;
-      color: $dark-accent-color;
+      color: var(--accent-color);
     }
 
     &--subtitle {
       font-size: $subtitle-large;
-      color: $dark-text-color;
+      color: var(--text-color);
     }
 
     &--description {
       margin-top: 2em;
-      color: $dark-text-color;
+      color: var(--text-color);
     }
   }
 
@@ -30,11 +30,11 @@
     flex-direction: column;
     align-items: start;
     padding: 20px 6em;
-    background-color: $dark-primary-color;
+    background-color: var(--primary-color);
 
     &--title {
       font-size: $title;
-      color: $dark-text-color;
+      color: var(--text-color);
       margin: 1em 0;
     }
 

@@ -49,7 +49,7 @@
               inactive-text="fr"
               class="test"
             />
-            <ThemedSwitch :size="36" v-model:model-value="screenMode" />
+            <ThemedSwitch :size="36" v-model:model-value="isLight" />
             <button class="nav-btn--resume">
               Resume
               <FlagIcon code="gb" />
@@ -69,15 +69,17 @@
 import './NavigationBar.scss'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
+import { useTheme } from '@/composables/useTheme.ts'
+const { isLight, toggleTheme } = useTheme()
 import FlagIcon from 'vue3-flag-icons'
 import { useI18n } from 'vue-i18n'
-import { ref, computed, watch } from 'vue'
+import { computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 
 const { locale } = useI18n({ useScope: 'global' })
 const router = useRouter()
 
-const screenMode = ref(false) //false = dark mode
+console.log(isLight.value)
 
 const currentRouteName = computed(() => router.currentRoute.value.name)
 
@@ -89,11 +91,17 @@ const handleLinkLinkedin = () => {
 }
 
 const handleHighlight = (routeName: string) => {
-  //TODO: if(light mode)
-  if (currentRouteName.value === routeName) return '#46f3ff'
-  return ''
+  if (isLight.value) {
+    if (currentRouteName.value === routeName) return '#ff810d'
+    return ''
+  } else {
+    if (currentRouteName.value === routeName) return '#46f3ff'
+    return ''
+  }
 }
-watch(currentRouteName, () => {
-  console.log(currentRouteName.value)
+watch(isLight, () => {
+  console.log('isLight', isLight.value)
+  toggleTheme()
+  // console.log(currentRouteName.value)
 })
 </script>

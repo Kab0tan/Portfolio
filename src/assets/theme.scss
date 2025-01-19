@@ -23,6 +23,24 @@ $large: 3em;
 $medium: 2em;
 $small: 1em;
 
+:root {
+  --primary-color: #69b6e4;
+  --secondary-color: #3f9ae4;
+  --accent-color: #46f3ff;
+  --text-color: #ffffff;
+  --text-color-secondary: #000000;
+  --background-color: #325693;
+}
+
+:root[data-theme='light'] {
+  --primary-color: #ffdc99;
+  --secondary-color: #fec98f;
+  --accent-color: #46f3ff;
+  --text-color: #ff810d;
+  --text-color-secondary: #000000;
+  --background-color: #ffffff;
+}
+
 $dark-gradient: linear-gradient(to bottom, $dark-background-color, $dark-secondary-color);
 $light-gradient: linear-gradient(to bottom, $light-background-color, $light-secondary-color);
 

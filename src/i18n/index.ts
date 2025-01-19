@@ -43,6 +43,7 @@ export default createI18n({
         h1: ABOUT_TEXTS.fr.H1,
         title: ABOUT_TEXTS.fr.TITLE,
         description: ABOUT_TEXTS.fr.DESCRIPTION,
+        content: ABOUT_TEXTS.fr.CONTENT,
       },
       experience: {
         title: EXPERIENCE_TEXTS.fr.title,

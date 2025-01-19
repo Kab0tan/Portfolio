@@ -1,5 +1,5 @@
 @import '@assets/theme.scss';
-@import '@assets/main.css';
+@import '@assets/base.css';
 
 a {
   text-decoration: none;
@@ -11,7 +11,7 @@ a {
   left: 0;
   right: 0;
   height: 4em;
-  background-color: $dark-background-color;
+  background-color: var(--background-color);
   color: white;
   z-index: 9999;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
@@ -22,7 +22,7 @@ a {
   display: flex;
   align-items: center;
   height: 100%;
-  border-top: 2px solid $dark-accent-color;
+  border-top: 2px solid var(--accent-color);
 }
 
 .nav-row {
@@ -64,9 +64,9 @@ a {
 
 .nav-btn {
   &--resume {
-    border: 3px solid $dark-primary-color;
+    border: 3px solid var(--primary-color);
     padding: 10px 20px;
-    color: $dark-text-color;
+    color: var(--text-color);
     font-family: 'JetBrains Mono', serif;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 7px;

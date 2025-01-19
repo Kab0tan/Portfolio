@@ -1,4 +1,3 @@
-// constants.js
 export const ABOUT_TEXTS = {
   en: {
     H1: 'Hi, my name is',
@@ -46,16 +45,25 @@ In addition, I remain curious and actively seek to learn about other topics that
       Mon stage de fin d’études, en tant que développeur Fullstack Junior, a confirmé mon envie de poursuivre ma carrière dans cette voie.
       Je continue également de nourrir cette passion par des projets personnels, ce qui me permet d’approfondir mes compétences.
       En parallèle, je continue aussi de m'intéresser et me former à d'autres thématiques qui me passionnent comme l'IA, la cybersécurité ou le BigData.`,
-    CONTENT: {
-      title: 'Photography',
-      description: `I'm also passionate about photography and video, but mainly photography. 
-          I had the chance to develop this passion through my studies at Grenoble in the 
-          audiovisual association of Grenoble-INP where i was Vice President between 2021-2022.
-           I had the opportunity to cover various students events and competitions.
-            It was also the opportunity to develop my skills in photography and video.`,
-      link: '',
-    },
+    CONTENT: [
+      {
+        title: 'Photography',
+        description: `Je suis passionné par la photographie et la vidéo, mais principalement par la photographie.
+        J'ai eu la chance de développer cette passion pendant mes études à Grenoble, au sein de l'association audiovisuelle de Grenoble-INP,
+        INProd, où j'ai été vice-président entre 2021 et 2022, et également gestionnaire du matériel audiovisuel que l'on louait aux étudiants.
+        J'ai eu l'opportunité de couvrir divers événements et compétitions étudiantes.
+        Cela m'a également permis de développer mes compétences en photographie et en vidéo.`,
+        link: '',
+        left: 'true',
+      },
+      {
+        title: 'Problèmes algorithmiques',
+        description: `Un passe-temps que j'ai également est la résolution de problèmes d'algorithmies en ligne.
+         Je fais généralement des problèmes sur Leetcode dans différents langages, mais aussi chaque année l'Advent of Code.
+        C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques pendant 25 jours avec une difficulté croissante.`,
+        link: '',
+        left: 'false',
+      },
+    ],
   },
 }
-
-export const ABOUT_TEXTS_FORMATION = {}
