@@ -22,13 +22,33 @@ In addition, I remain curious and actively seek to learn about other topics that
           It was also the opportunity to develop my skills in photography and video.`,
         link: '',
         left: 'true',
+        links: [
+          {
+            src: 'src/assets/images/insta_sc.jpg',
+            link: '',
+          },
+        ],
       },
       {
         title: 'Coding problems',
-        description: `A thing that I really enjoy is solving coding problems. I usually do leetcode in various languages, but also every year Adevent of Code.
+        description: `A thing that I really enjoy during my spare time is solving coding problems. I usually do leetcode in various languages, but also every year Adevent of Code.
         It's a yearly contest where you have to solve different algorithmic problems during 25 days.`,
         link: '',
         left: 'false',
+        links: [
+          {
+            src: 'src/assets/images/leetcode_sc.jpg',
+            link: 'https://leetcode.com/problemset/',
+          },
+          {
+            src: 'src/assets/images/aoc_sc.jpg',
+            link: 'https://adventofcode.com/2024',
+          },
+          {
+            src: 'src/assets/images/codingame_sc.jpg',
+            link: 'https://www.codingame.com/training',
+          },
+        ],
       },
     ],
   },
@@ -55,6 +75,12 @@ In addition, I remain curious and actively seek to learn about other topics that
         Cela m'a également permis de développer mes compétences en photographie et en vidéo.`,
         link: '',
         left: 'true',
+        links: [
+          {
+            src: 'src/assets/images/insta_sc.jpg',
+            link: '',
+          },
+        ],
       },
       {
         title: 'Problèmes algorithmiques',
@@ -63,6 +89,20 @@ In addition, I remain curious and actively seek to learn about other topics that
         C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques pendant 25 jours avec une difficulté croissante.`,
         link: '',
         left: 'false',
+        links: [
+          {
+            src: 'src/assets/images/leetcode_sc.jpg',
+            link: 'https://leetcode.com/problemset/',
+          },
+          {
+            src: 'src/assets/images/aoc_sc.jpg',
+            link: 'https://adventofcode.com/2024',
+          },
+          {
+            src: 'src/assets/images/codingame_sc.jpg',
+            link: 'https://www.codingame.com/training',
+          },
+        ],
       },
     ],
   },

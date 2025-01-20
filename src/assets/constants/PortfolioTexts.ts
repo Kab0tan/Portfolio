@@ -33,6 +33,26 @@ export const PORTFOLIO_TEXTS = {
         link: '',
         icon: 'true',
       },
+      {
+        title: 'Portfolio',
+        tags: [
+          { name: 'Vue3' },
+          { name: 'SCSS' },
+          { name: 'Vite' },
+          { name: 'Pinia' },
+          { name: 'TypeScript' },
+          { name: 'Element Plus' },
+        ],
+        description: 'My personal portfolio website.',
+        link: '',
+        icon: 'true',
+      },
+      {
+        title: 'deezer-to-spotify',
+        tags: [{ name: 'Python' }],
+        description:
+          'A semi-automatic script that allows you to convert your Deezer library into a Spotify playlist.',
+      },
     ],
   },
   fr: {
@@ -65,6 +85,26 @@ export const PORTFOLIO_TEXTS = {
          Question par question ou par un import CSV.`,
         link: '',
         icon: 'true',
+      },
+      {
+        title: 'Portfolio',
+        tags: [
+          { name: 'Vue3' },
+          { name: 'SCSS' },
+          { name: 'Vite' },
+          { name: 'Pinia' },
+          { name: 'TypeScript' },
+          { name: 'Element Plus' },
+        ],
+        description: 'Mon site portfolio personnel.',
+        link: '',
+        icon: 'true',
+      },
+      {
+        title: 'deezer-to-spotify',
+        tags: [{ name: 'Python' }],
+        description:
+          'Script semi-automatique permettant de convertir votre bibliotheque Deezer en une playlist Spotify.',
       },
     ],
   },

@@ -19,7 +19,9 @@
       </ElCol>
       <ElCol :span="8">
         <div class="themed-card__image">
-          <div class="img"></div>
+          <div class="img">
+            <ThemedImage :links="links" />
+          </div>
         </div>
       </ElCol>
     </ElRow>
@@ -27,7 +29,9 @@
     <ElRow v-else justify="center" class="themed-card__row">
       <ElCol :span="8">
         <div class="themed-card__image">
-          <div class="img"></div>
+          <div class="img">
+            <ThemedImage :links="links" />
+          </div>
         </div>
       </ElCol>
       <ElCol :span="16">
@@ -47,17 +51,15 @@
 
 <script setup lang="ts">
 import './ThemedCard.scss'
+import type { Tag, Image } from '@/types.ts'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import ThemedImage from '@components/ThemedImage/ThemedImage.vue'
 
 const handleLinkGithub = () => {
   console.log('github')
 }
 
-interface Tag {
-  name: string
-}
-
-const { left, title, description, tags, icons } = defineProps({
+const { left, title, description, tags, icons, links } = defineProps({
   left: {
     type: String,
     default: 'true',
@@ -78,10 +80,10 @@ const { left, title, description, tags, icons } = defineProps({
     type: Boolean,
     default: false,
   },
-  // image: {
-  //   type: String, //TODO: maybe to change
-  //   required: true,
-  // },
+  links: {
+    type: Array<Image>,
+    required: false,
+  },
 })
 
 const handleLeftCard = () => {

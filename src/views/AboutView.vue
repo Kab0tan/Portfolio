@@ -15,6 +15,7 @@
           :title="rt(msg.title)"
           :description="rt(msg.description)"
           :left="rt(msg.left)"
+          :links="msg.links"
         />
       </div>
     </div>

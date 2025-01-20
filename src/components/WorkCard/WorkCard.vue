@@ -17,10 +17,7 @@
 
 <script setup lang="ts">
 import './WorkCard.scss'
-
-interface Tag {
-  name: string
-}
+import type { Tag } from '@/types.ts'
 
 defineProps({
   title: {
