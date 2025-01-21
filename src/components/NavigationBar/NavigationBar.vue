@@ -79,8 +79,6 @@ import { useRouter } from 'vue-router'
 const { locale } = useI18n({ useScope: 'global' })
 const router = useRouter()
 
-console.log(isLight.value)
-
 const currentRouteName = computed(() => router.currentRoute.value.name)
 
 const handleLinkGithub = () => {
@@ -100,8 +98,6 @@ const handleHighlight = (routeName: string) => {
   }
 }
 watch(isLight, () => {
-  console.log('isLight', isLight.value)
   toggleTheme()
-  // console.log(currentRouteName.value)
 })
 </script>

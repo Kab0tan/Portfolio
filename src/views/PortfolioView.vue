@@ -13,7 +13,9 @@
           :title="rt(item.title)"
           :tags="item.tags"
           :description="rt(item.description)"
-          :icons="true"
+          :links="item.links"
+          :left="rt(item.left)"
+          :github="rt(item.github)"
         />
       </div>
     </div>

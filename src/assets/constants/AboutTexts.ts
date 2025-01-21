@@ -19,22 +19,20 @@ In addition, I remain curious and actively seek to learn about other topics that
         I had the chance to develop this passion through my studies at Grenoble in the 
         audiovisual association of Grenoble-INP where i was Vice President between 2021-2022.
          I had the opportunity to cover various students events and competitions.
-          It was also the opportunity to develop my skills in photography and video.`,
-        link: '',
-        left: 'true',
+          It was also the opportunity to develop my skills in photography and video, using Adobe softwares like Lightroom and Photoshop.`,
         links: [
           {
             src: 'src/assets/images/insta_sc.jpg',
             link: '',
           },
         ],
+        left: 'true',
       },
       {
         title: 'Coding problems',
-        description: `A thing that I really enjoy during my spare time is solving coding problems. I usually do leetcode in various languages, but also every year Adevent of Code.
+        description: `A thing that I really enjoy during my spare time is solving coding problems.
+         I usually do leetcode in various languages, but also every year Advent of Code.
         It's a yearly contest where you have to solve different algorithmic problems during 25 days.`,
-        link: '',
-        left: 'false',
         links: [
           {
             src: 'src/assets/images/leetcode_sc.jpg',
@@ -49,13 +47,14 @@ In addition, I remain curious and actively seek to learn about other topics that
             link: 'https://www.codingame.com/training',
           },
         ],
+        left: 'false',
       },
     ],
   },
   fr: {
     H1: "Bonjour, je m'appelle",
     TITLE: 'Je suis un ingénieur logiciel.',
-    DESCRIPTION: `Je suis un ingénieur diplomé de Grenoble-INP ENSE3 
+    DESCRIPTION: `Je suis ingénieur diplomé de Grenoble-INP ENSE3 
       et basé à Paris (France). J'ai suivi une filière commune avec l'école Grenoble-INP PHELMA, 
       axée sur le traitement de l'image et du signal avec également une forte composante autour de 
       l'informatique et de l'IA, avec notamment de l'OS, du C, Python et Java. 
@@ -72,23 +71,21 @@ In addition, I remain curious and actively seek to learn about other topics that
         J'ai eu la chance de développer cette passion pendant mes études à Grenoble, au sein de l'association audiovisuelle de Grenoble-INP,
         INProd, où j'ai été vice-président entre 2021 et 2022, et également gestionnaire du matériel audiovisuel que l'on louait aux étudiants.
         J'ai eu l'opportunité de couvrir divers événements et compétitions étudiantes.
-        Cela m'a également permis de développer mes compétences en photographie et en vidéo.`,
-        link: '',
-        left: 'true',
+        Cela m'a également permis de développer mes compétences en photographie et en vidéo,
+         et également sur les logiciels Lightroom et Photoshop.`,
         links: [
           {
             src: 'src/assets/images/insta_sc.jpg',
             link: '',
           },
         ],
+        left: 'true',
       },
       {
         title: 'Problèmes algorithmiques',
         description: `Un passe-temps que j'ai également est la résolution de problèmes d'algorithmies en ligne.
          Je fais généralement des problèmes sur Leetcode dans différents langages, mais aussi chaque année l'Advent of Code.
         C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques pendant 25 jours avec une difficulté croissante.`,
-        link: '',
-        left: 'false',
         links: [
           {
             src: 'src/assets/images/leetcode_sc.jpg',
@@ -103,6 +100,7 @@ In addition, I remain curious and actively seek to learn about other topics that
             link: 'https://www.codingame.com/training',
           },
         ],
+        left: 'false',
       },
     ],
   },
