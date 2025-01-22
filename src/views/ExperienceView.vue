@@ -2,7 +2,7 @@
   <div class="experience">
     <div class="experience__header">
       <span class="experience__header--title"> {{ t('experience.title') }}</span>
-      <span class="experience__header--subtitle"> {{ t('experience.subtitle') }} </span>
+      <span class="experience__header--description"> {{ t('experience.description') }} </span>
     </div>
     <div class="experience__content">
       <!-- career -->

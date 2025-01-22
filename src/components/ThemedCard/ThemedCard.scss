@@ -1,7 +1,7 @@
 @import '@assets/theme.scss';
 
 .themed-card {
-  background-color: var(--text-color);
+  background-color: var(--card-bg-color);
   border-radius: 15px;
   width: 60em;
   overflow: hidden;

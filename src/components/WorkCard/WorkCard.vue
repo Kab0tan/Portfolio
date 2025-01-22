@@ -9,8 +9,9 @@
     <div class="work-card--description">
       {{ description }}
     </div>
-    <div class="work-card--skills">
-      <span>Subjects : {{ skills }}</span>
+    <div>
+      <div class="work-card--skills">{{ t('experience.skills') }}:</div>
+      <span>{{ skills }}</span>
     </div>
   </div>
 </template>
@@ -18,6 +19,9 @@
 <script setup lang="ts">
 import './WorkCard.scss'
 import type { Tag } from '@/types.ts'
+
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 defineProps({
   title: {

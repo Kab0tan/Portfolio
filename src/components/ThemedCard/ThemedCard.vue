@@ -48,7 +48,12 @@
         <div class="themed-card__content">
           <div class="themed-card__content--title">{{ title }}</div>
           <ElRow class="themed-card__tags">
-            <div v-for="tag in tags" :key="tag.name" class="themed-card__tags--tag">
+            <div
+              v-for="tag in tags"
+              :key="tag.name"
+              class="themed-card__tags--tag"
+              :style="{ 'background-color': tag.bgColor, color: tag.txtColor }"
+            >
               {{ tag.name }}
             </div>
           </ElRow>

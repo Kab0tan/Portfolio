@@ -14,9 +14,10 @@
       font-size: $title;
       color: var(--text-color);
     }
-    &--subtitle {
+    &--description {
       font-size: $subtitle-small;
       color: var(--text-color);
+      margin-top: 2em;
     }
   }
 

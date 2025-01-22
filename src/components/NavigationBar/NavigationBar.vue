@@ -47,9 +47,15 @@
               inline-prompt
               active-text="en"
               inactive-text="fr"
-              class="test"
+              :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
             />
-            <ThemedSwitch :size="36" v-model:model-value="isLight" />
+            <ElSwitch
+              v-model="isLight"
+              :active-icon="Sunny"
+              :inactive-icon="Moon"
+              inline-prompt
+              :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
+            ></ElSwitch>
             <button class="nav-btn--resume">
               Resume
               <FlagIcon code="gb" />
@@ -68,7 +74,7 @@
 <script setup lang="ts">
 import './NavigationBar.scss'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
+import { Moon, Sunny } from '@element-plus/icons-vue'
 import { useTheme } from '@/composables/useTheme.ts'
 const { isLight, toggleTheme } = useTheme()
 import FlagIcon from 'vue3-flag-icons'

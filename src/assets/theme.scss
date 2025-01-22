@@ -30,19 +30,21 @@ $small: 1em;
   --text-color: #ffffff;
   --text-color-secondary: #000000;
   --background-color: #325693;
+  --card-bg-color: #ffffff;
 }
 
 :root[data-theme='light'] {
   --primary-color: #ffdc99;
   --secondary-color: #fec98f;
-  --accent-color: #46f3ff;
+  --accent-color: #ffdc99;
   --text-color: #ff810d;
   --text-color-secondary: #000000;
   --background-color: #ffffff;
+  --card-bg-color: #ffffff;
 }
 
 $dark-gradient: linear-gradient(to bottom, $dark-background-color, $dark-secondary-color);
-$light-gradient: linear-gradient(to bottom, $light-background-color, $light-secondary-color);
+$light-gradient: linear-gradient(to bottom, #ff810d, $light-secondary-color);
 
 $dark-gradient-alt: linear-gradient(to bottom, #2b4485, #afcaff);
 $light-gradient-alt: linear-gradient(to bottom, #66ffed, #ffeeb2);

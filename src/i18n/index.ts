@@ -17,15 +17,16 @@ export default createI18n({
       },
       experience: {
         title: EXPERIENCE_TEXTS.en.title,
-        subtitle: EXPERIENCE_TEXTS.en.subtitle,
+        description: EXPERIENCE_TEXTS.en.description,
         careerTitle: EXPERIENCE_TEXTS.en.careerTitle,
         educationTitle: EXPERIENCE_TEXTS.en.educationTitle,
         career: EXPERIENCE_TEXTS.en.career,
         education: EXPERIENCE_TEXTS.en.education,
+        skills: 'Skills',
       },
       portfolio: {
         title: PORTFOLIO_TEXTS.en.title,
-        subtitle: PORTFOLIO_TEXTS.en.subtitle,
+        description: PORTFOLIO_TEXTS.en.description,
         content: PORTFOLIO_TEXTS.en.content,
       },
       contact: {
@@ -44,15 +45,16 @@ export default createI18n({
       },
       experience: {
         title: EXPERIENCE_TEXTS.fr.title,
-        subtitle: EXPERIENCE_TEXTS.fr.subtitle,
+        description: EXPERIENCE_TEXTS.fr.description,
         careerTitle: EXPERIENCE_TEXTS.fr.careerTitle,
         educationTitle: EXPERIENCE_TEXTS.fr.educationTitle,
         career: EXPERIENCE_TEXTS.fr.career,
         education: EXPERIENCE_TEXTS.fr.education,
+        skills: 'Compétences',
       },
       portfolio: {
         title: PORTFOLIO_TEXTS.fr.title,
-        subtitle: PORTFOLIO_TEXTS.fr.subtitle,
+        description: PORTFOLIO_TEXTS.fr.description,
         content: PORTFOLIO_TEXTS.fr.content,
       },
       contact: {

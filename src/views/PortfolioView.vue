@@ -2,7 +2,7 @@
   <div class="portfolio">
     <div class="portfolio__header">
       <span class="portfolio__header--title"> {{ t('portfolio.title') }} </span>
-      <span class="portfolio__header--subtitle"> {{ t('portfolio.subtitle') }}</span>
+      <span class="portfolio__header--description"> {{ t('portfolio.description') }}</span>
     </div>
     <div class="portfolio__content">
       <span class="portfolio__content--title">Portfolio</span>

@@ -1,7 +1,7 @@
 export const EXPERIENCE_TEXTS = {
   en: {
     title: 'Experience',
-    subtitle: `I recently completed my engineering studies and I'm excited to take the next step in my 
+    description: `I recently completed my engineering studies and I'm excited to take the next step in my 
     career to work in the Tech industrie. Through my studies and personal projects, I've developed my skills
     in programming and web development, and I'm eager to continue learning and growing in this field.
     I'm passionate about crafting efficient and innovative solutions while continusly learning and staying
@@ -17,7 +17,7 @@ export const EXPERIENCE_TEXTS = {
         Frontend and Backend development of their web platform using the 
         frameworks Vue3.js and Ruby on Rails.`,
         subjects:
-          'Vue3 • Ruby on Rails • Javascript • Ruby • PostgreSQL • GCP • Git • Github • Docker • ChatGPT API',
+          'Vue3 • Ruby on Rails • Javascript • Ruby • PostgreSQL • GCP • Git • Github • Docker • ChatGPT API • Agile',
       },
       {
         title: 'International Research Student | Okayama University',
@@ -55,8 +55,12 @@ export const EXPERIENCE_TEXTS = {
   },
   fr: {
     title: 'Expérience',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
+    description: `J'ai récemment terminé mes études d'ingénierie et je souhaite désormais orienter ma carrière vers le développement web/logiciel.
+        À travers mes études et mes projets personnels, j'ai développé mes compétences en
+         programmation et en développement web/mobile, et je suis impatient de continuer à apprendre
+          et à évoluer dans ce domaine. Je suis passionné par la création de solutions efficaces
+           et créatives tout en continuant à apprendre et à me tenir informé des dernières technologies 
+           de l'industrie. Ci-dessous un résumé de mon parcours académique et de mes expériences professionnelles. `,
     careerTitle: 'Expériences professionnelles',
     educationTitle: 'Formation',
     career: [
@@ -67,7 +71,7 @@ export const EXPERIENCE_TEXTS = {
         le développement Frontend et Backend de leur plateforme web sous les 
         framework Vue3.js et Ruby on Rails.`,
         subjects:
-          'Vue3 • Ruby on Rails • Javascript • Ruby • PostgreSQL • GCP • Git • Github • Docker • API ChatGPT',
+          'Vue3 • Ruby on Rails • Javascript • Ruby • PostgreSQL • GCP • Git • Github • Docker • API ChatGPT • Agile',
       },
       {
         title: "Etudiant chercheur international | Université d'Okayama",

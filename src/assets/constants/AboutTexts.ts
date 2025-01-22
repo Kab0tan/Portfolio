@@ -55,7 +55,7 @@ In addition, I remain curious and actively seek to learn about other topics that
   },
   fr: {
     H1: "Bonjour, je m'appelle",
-    TITLE: 'Je suis un ingénieur logiciel.',
+    TITLE: 'Je suis ingénieur logiciel.',
     DESCRIPTION: `Je suis ingénieur diplomé de Grenoble-INP ENSE3 
       et basé à Paris (France). J'ai suivi une filière commune avec l'école Grenoble-INP PHELMA, 
       axée sur le traitement de l'image et du signal avec également une forte composante autour de 

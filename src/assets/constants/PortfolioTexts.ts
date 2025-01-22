@@ -1,7 +1,7 @@
 export const PORTFOLIO_TEXTS = {
   en: {
     title: 'Portfolio',
-    subtitle: `During my studies and free time, I've worked on a few projects that reflect
+    description: `During my studies and free time, I've worked on a few projects that reflect
      my passion for programming and learning new tech stacks. I still continue to work on different personal
      projects whenever inspiration strikes. If you have any questions on one of those projects, feel free to contact me,
      I'll be happy to answer !`,
@@ -28,10 +28,10 @@ export const PORTFOLIO_TEXTS = {
       {
         title: 'Quizium',
         tags: [
-          { name: 'React Native' },
-          { name: 'SQLite' },
-          { name: 'Expo' },
-          { name: 'TypeScript' },
+          { name: 'React Native', bgColor: '#61DAFB' },
+          { name: 'SQLite', bgColor: 'white', txtColor: '#003B57' },
+          { name: 'Expo', bgColor: '#000020', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
         ],
         description: `A customizable mobile quiz application built with React Native.
          Users can create their own quizzes and questions, with or without images, either
@@ -48,12 +48,12 @@ export const PORTFOLIO_TEXTS = {
       {
         title: 'Portfolio',
         tags: [
-          { name: 'Vue3' },
-          { name: 'SCSS' },
-          { name: 'Vite' },
-          { name: 'Pinia' },
-          { name: 'TypeScript' },
-          { name: 'Element Plus' },
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'SCSS', bgColor: '#c69', txtColor: 'white' },
+          { name: 'Vite', bgColor: '#ffcb3b' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
         ],
         description: "My personal portfolio website that you're currently on.",
         github: '',
@@ -61,7 +61,7 @@ export const PORTFOLIO_TEXTS = {
       },
       {
         title: 'deezer-to-spotify',
-        tags: [{ name: 'Python' }],
+        tags: [{ name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' }],
         description:
           'A semi-automatic script that allows you to convert your Deezer library into a Spotify playlist.',
         links: [
@@ -81,16 +81,20 @@ export const PORTFOLIO_TEXTS = {
   },
   fr: {
     title: 'Portfolio',
-    subtitle: 'Cecie est ma page portfolio',
+    description: `Pendant mes études et mon temps libre, j'ai travaillé sur plusieurs projets qui 
+    reflètent ma passion pour la programmation et l'apprentissage de nouvelles technologies.
+     Je continue toujours à travailler sur différents projets personnels dès que l'inspiration
+      me vient. Si vous avez des questions sur l'un de ces projets, n'hésitez pas à me contacter,
+       je serai ravi d'y répondre !`,
     content: [
       {
         title: 'Kanji no Kabe',
         tags: [
-          { name: 'Vue3' },
-          { name: 'Element Plus' },
-          { name: 'SCSS' },
-          { name: 'Vite' },
-          { name: 'Pinia' },
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
+          { name: 'SCSS', bgColor: '#c69', txtColor: 'white' },
+          { name: 'Vite', bgColor: '#ffcb3b' },
+          { name: 'Pinia', bgColor: '#f7df65' },
         ],
         description: `Petite application web de quiz pour m'entraîner sur les Kanjis du niveau N5 à N1 en Japonais.`,
         links: [
@@ -105,10 +109,10 @@ export const PORTFOLIO_TEXTS = {
       {
         title: 'Quizium',
         tags: [
-          { name: 'React Native' },
-          { name: 'SQLite' },
-          { name: 'Expo' },
-          { name: 'TypeScript' },
+          { name: 'React Native', bgColor: '#61DAFB' },
+          { name: 'SQLite', bgColor: 'white', txtColor: '#003B57' },
+          { name: 'Expo', bgColor: '#000020', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
         ],
         description: `Une application mobile de quiz personnalisable sous react Native. L'utilisateur peut créer
          ses propres quiz et questions, avec ou sans images.
@@ -125,12 +129,12 @@ export const PORTFOLIO_TEXTS = {
       {
         title: 'Portfolio',
         tags: [
-          { name: 'Vue3' },
-          { name: 'SCSS' },
-          { name: 'Vite' },
-          { name: 'Pinia' },
-          { name: 'TypeScript' },
-          { name: 'Element Plus' },
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'SCSS', bgColor: '#c69', txtColor: 'white' },
+          { name: 'Vite', bgColor: '#ffcb3b' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
         ],
         description: 'Mon site portfolio personnel sur lequel vous êtes actuellement.',
         github: '',
@@ -138,7 +142,7 @@ export const PORTFOLIO_TEXTS = {
       },
       {
         title: 'deezer-to-spotify',
-        tags: [{ name: 'Python' }],
+        tags: [{ name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' }],
         description:
           'Script semi-automatique permettant de convertir votre bibliotheque Deezer en une playlist Spotify.',
         links: [
