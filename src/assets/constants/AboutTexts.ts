@@ -27,6 +27,7 @@ In addition, I remain curious and actively seek to learn about other topics that
           },
         ],
         left: 'true',
+        github: '',
       },
       {
         title: 'Coding problems',
@@ -48,6 +49,7 @@ In addition, I remain curious and actively seek to learn about other topics that
           },
         ],
         left: 'false',
+        github: '',
       },
     ],
   },
@@ -80,6 +82,7 @@ In addition, I remain curious and actively seek to learn about other topics that
           },
         ],
         left: 'true',
+        github: '',
       },
       {
         title: 'Problèmes algorithmiques',
@@ -101,6 +104,7 @@ In addition, I remain curious and actively seek to learn about other topics that
           },
         ],
         left: 'false',
+        github: '',
       },
     ],
   },

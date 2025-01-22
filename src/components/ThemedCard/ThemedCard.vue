@@ -1,7 +1,7 @@
 <template>
   <div class="themed-card">
     <ElRow v-if="handleLeftCard()" justify="center" class="themed-card__row">
-      <ElCol :span="16">
+      <ElCol :span="15">
         <div class="themed-card__content">
           <div class="themed-card__content--title">{{ title }}</div>
           <!-- tag section -->
@@ -18,12 +18,16 @@
           <div class="themed-card__content--description">
             {{ description }}
           </div>
-          <div v-if="hasGithub()" class="themed-card__content--icons">
-            <FontAwesomeIcon icon="fa-brands fa-github" @click="handleLinkGithub" />
-          </div>
+          <ElRow v-if="hasGithub()" class="themed-card__content--icons">
+            <FontAwesomeIcon
+              icon="fa-brands fa-github"
+              style="cursor: pointer"
+              @click="handleLinkGithub(github as string)"
+            />
+          </ElRow>
         </div>
       </ElCol>
-      <ElCol :span="8">
+      <ElCol :span="9">
         <div class="themed-card__image">
           <div class="img">
             <ThemedImage :links="links" />
@@ -33,14 +37,14 @@
     </ElRow>
     <!-- reverse disposition -->
     <ElRow v-else justify="center" class="themed-card__row">
-      <ElCol :span="8">
+      <ElCol :span="9">
         <div class="themed-card__image">
           <div class="img">
             <ThemedImage :links="links" />
           </div>
         </div>
       </ElCol>
-      <ElCol :span="16">
+      <ElCol :span="15">
         <div class="themed-card__content">
           <div class="themed-card__content--title">{{ title }}</div>
           <ElRow class="themed-card__tags">
@@ -54,6 +58,7 @@
           <div v-if="hasGithub()" class="themed-card__content--icons">
             <FontAwesomeIcon
               icon="fa-brands fa-github"
+              style="cursor: pointer"
               @click="handleLinkGithub(github as string)"
             />
           </div>
@@ -106,6 +111,7 @@ const handleLeftCard = () => {
 }
 
 const handleLinkGithub = (githubLink: string) => {
+  console.log(githubLink)
   window.open(githubLink, '_blank')
 }
 </script>

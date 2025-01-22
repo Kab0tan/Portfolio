@@ -4,10 +4,12 @@
 .contact {
   &__content {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 6em 10em 0 10em;
     height: 100vh;
     background-color: var(--background-color);
+    gap: 2em;
 
     &--title {
       font-size: 2em;
@@ -15,54 +17,72 @@
       margin-bottom: 0.5em;
     }
     &--subtitle {
+      width: 60%;
       color: var(--text-color);
       margin-bottom: 1.5em;
-    }
-
-    &__inputs {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &--input .el-textarea__inner {
-      width: 50%;
-      color: var(--accent-color);
-      border: 0;
-      border-radius: 0;
-      background-color: rgba(255, 255, 255, 0);
-      box-shadow: none;
-      font-size: 1em;
-      border-bottom: 2px solid var(--accent-color);
-      margin-bottom: 2em;
-
-      &:focus {
-        box-shadow: none;
-      }
-
-      &:hover {
-        box-shadow: none;
-      }
-
-      &::placeholder {
-        color: var(--accent-color);
-      }
-    }
-
-    &--btn {
-      font-size: 1em;
-      font-family: 'JetBrains Mono', serif;
-      color: var(--accent-color);
-      border: 3px solid var(--accent-color);
-      background-color: rgba(255, 255, 255, 0);
-      margin-top: 2em;
-      padding: 10px 15px;
-      border-radius: 15px;
-      max-width: fit-content;
-      transition: all 0.5s ease;
-    }
-
-    &--btn:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      text-align: center;
     }
   }
+}
+
+.contact-btn {
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'JetBrains Mono', serif;
+}
+
+button.contact-btn {
+  color: #382b22;
+  padding: 1.25em 2em;
+  background: #a7e7fc;
+  border: 2px solid #0692c0;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition:
+    transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.contact-btn::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #75dafb;
+  border-radius: inherit;
+  box-shadow:
+    0 0 0 2px #0692c0,
+    0 0.625em 10px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, 0.75em, -1em);
+  transition:
+    transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.contact-btn:hover {
+  background: #a7e7fc;
+  transform: translate(0, 0.25em);
+}
+
+button.contact-btn:hover::before {
+  box-shadow:
+    0 0 0 2px #0692c0,
+    0 0.5em 10px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+button.contact-btn:active {
+  background: #a7e7fc;
+  transform: translate(0em, 0.75em);
+}
+
+button.contact-btn:active::before {
+  box-shadow:
+    0 0 0 2px #0692c0,
+    0 0 rgba(255, 255, 255, 0.1);
+  transform: translate3d(0, 0, -1em);
 }

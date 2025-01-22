@@ -32,10 +32,7 @@ export default createI18n({
         title: 'Get in touch',
         subtitle:
           "Feel free to contact me ! I'm open to all opportunities, or if you have any question on a project i'll be happy to answer.",
-        placeholderName: 'Your name',
-        placeholderEmail: 'Your email',
-        placeholderMessage: 'Your message',
-        submit: 'Send message',
+        popover: 'Copy email',
       },
     },
     fr: {
@@ -62,10 +59,7 @@ export default createI18n({
         title: 'Contact',
         subtitle:
           "N'hésitez pas à me contacter ! Je suis ouvert aux opportunités et je serai ravi de répondre à vos questions sur un projet si vous en avez.",
-        placeholderName: 'Votre nom',
-        placeholderEmail: 'Votre email',
-        placeholderMessage: 'Votre message',
-        submit: 'Envoyer',
+        popover: "Copier l'email",
       },
     },
   },

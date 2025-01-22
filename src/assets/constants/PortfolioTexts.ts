@@ -7,7 +7,7 @@ export const PORTFOLIO_TEXTS = {
      I'll be happy to answer !`,
     content: [
       {
-        title: 'Kanji no kabe',
+        title: 'Kanji no Kabe',
         tags: [
           { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
           { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
@@ -19,11 +19,11 @@ export const PORTFOLIO_TEXTS = {
         links: [
           {
             src: 'src/assets/images/KanjinoKabe.png',
-            link: '',
+            link: 'https://github.com/Kab0tan/KanjiNoKabe/',
           },
         ],
         left: 'true',
-        github: '',
+        github: 'https://github.com/Kab0tan/KanjiNoKabe/',
       },
       {
         title: 'Quizium',
@@ -96,10 +96,10 @@ export const PORTFOLIO_TEXTS = {
         links: [
           {
             src: 'src/assets/images/KanjinoKabe.png',
-            link: '',
+            link: 'https://github.com/Kab0tan/KanjiNoKabe/',
           },
         ],
-        github: '',
+        github: 'https://github.com/Kab0tan/KanjiNoKabe/',
         left: 'true',
       },
       {
