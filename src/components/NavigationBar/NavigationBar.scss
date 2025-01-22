@@ -12,7 +12,7 @@ a {
   right: 0;
   height: 4em;
   background-color: var(--background-color);
-  color: white;
+  color: var(--text-color);
   z-index: 9999;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
 }
@@ -45,7 +45,7 @@ a {
 }
 
 .nav-text {
-  color: white;
+  color: var(--text-color);
   font-size: 1em;
   padding: 7px 15px;
   border-radius: 10px;
@@ -64,17 +64,18 @@ a {
 
 .nav-btn {
   &--resume {
-    border: 3px solid var(--primary-color);
+    border: 0px solid var(--btn-border-color);
     padding: 10px 20px;
-    color: var(--text-color);
+    color: var(--btn-border-color);
     font-family: 'JetBrains Mono', serif;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--btn-bg-color);
     border-radius: 7px;
     transition: all 0.5s ease;
   }
 
   &--resume:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    // background-color: rgba(0, 0, 0, 0.093);
+    filter: brightness(0.8);
   }
 }
 

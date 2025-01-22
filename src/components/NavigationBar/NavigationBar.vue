@@ -61,7 +61,7 @@
               <FlagIcon code="gb" />
             </button>
             <button class="nav-btn--resume">
-              Resume
+              CV
               <FlagIcon code="fr" />
             </button>
           </div>
