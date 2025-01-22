@@ -35,14 +35,15 @@ export const PORTFOLIO_TEXTS = {
         ],
         description: `A customizable mobile quiz application built with React Native.
          Users can create their own quizzes and questions, with or without images, either
-          one question at a time or by importing a CSV file.`,
+          one question at a time or by importing a CSV file.
+          I also made a previous version of the app on Flutter.`,
         links: [
           {
             src: 'src/assets/images/quizium.jpg',
-            link: '',
+            link: 'https://github.com/Kab0tan/Quizium',
           },
         ],
-        github: '',
+        github: 'https://github.com/Kab0tan/Quizium',
         left: 'false',
       },
       {
@@ -75,7 +76,7 @@ export const PORTFOLIO_TEXTS = {
           },
         ],
         left: 'false',
-        github: '',
+        github: 'https://github.com/Kab0tan/deezer-to-spotify',
       },
     ],
   },
@@ -120,10 +121,10 @@ export const PORTFOLIO_TEXTS = {
         links: [
           {
             src: 'src/assets/images/quizium.jpg',
-            link: '',
+            link: 'https://github.com/Kab0tan/Quizium',
           },
         ],
-        github: '',
+        github: 'https://github.com/Kab0tan/Quizium',
         left: 'false',
       },
       {
@@ -155,7 +156,7 @@ export const PORTFOLIO_TEXTS = {
             link: '',
           },
         ],
-        github: '',
+        github: 'https://github.com/Kab0tan/deezer-to-spotify',
         left: 'false',
       },
     ],

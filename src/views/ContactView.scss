@@ -32,10 +32,9 @@
 }
 
 button.contact-btn {
-  color: #382b22;
   padding: 1.25em 2em;
-  background: #a7e7fc;
-  border: 2px solid #0692c0;
+  background: var(--btn-bg-color);
+  border: 2px solid var(--btn-border-color);
   border-radius: 0.75em;
   transform-style: preserve-3d;
   transition:
@@ -52,11 +51,9 @@ button.contact-btn::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #75dafb;
+  background: var(--primary-color);
   border-radius: inherit;
-  box-shadow:
-    0 0 0 2px #0692c0,
-    0 0.625em 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px var(--btn-border-color);
   transform: translate3d(0, 0.75em, -1em);
   transition:
     transform 150ms cubic-bezier(0, 0, 0.58, 1),
@@ -64,25 +61,23 @@ button.contact-btn::before {
 }
 
 button.contact-btn:hover {
-  background: #a7e7fc;
+  background: var(--btn-bg-color);
   transform: translate(0, 0.25em);
 }
 
 button.contact-btn:hover::before {
-  box-shadow:
-    0 0 0 2px #0692c0,
-    0 0.5em 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px var(--btn-border-color);
   transform: translate3d(0, 0.5em, -1em);
 }
 
 button.contact-btn:active {
-  background: #a7e7fc;
+  background: var(--btn-bg-color);
   transform: translate(0em, 0.75em);
 }
 
 button.contact-btn:active::before {
   box-shadow:
-    0 0 0 2px #0692c0,
+    0 0 0 2px var(--background-color),
     0 0 rgba(255, 255, 255, 0.1);
   transform: translate3d(0, 0, -1em);
 }

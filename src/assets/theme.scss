@@ -31,6 +31,8 @@ $small: 1em;
   --text-color-secondary: #000000;
   --background-color: #325693;
   --card-bg-color: #ffffff;
+  --btn-border-color: #0692c0;
+  --btn-bg-color: #a7e7fc;
 }
 
 :root[data-theme='light'] {
@@ -41,6 +43,8 @@ $small: 1em;
   --text-color-secondary: #000000;
   --background-color: #ffffff;
   --card-bg-color: #ffffff;
+  --btn-border-color: #ff810d;
+  --btn-bg-color: #fae8c6;
 }
 
 $dark-gradient: linear-gradient(to bottom, $dark-background-color, $dark-secondary-color);
