@@ -1,7 +1,8 @@
 <template>
   <header class="header">
     <nav class="nav-container">
-      <ElRow :gutter="0" class="nav-row">
+      <MobileNavigationBar v-if="isMobile" />
+      <ElRow v-else class="nav-row">
         <ElCol :span="8">
           <div class="nav-left">
             <RouterLink to="/" class="nav-text" :style="{ color: handleHighlight('about') }"
@@ -25,7 +26,6 @@
               :style="{ color: handleHighlight('contact') }"
               >Contact</RouterLink
             >
-
             <FontAwesomeIcon
               @click="handleLinkGithub"
               icon="fa-brands fa-github"
@@ -79,13 +79,20 @@ import { useTheme } from '@/composables/useTheme.ts'
 const { isLight, toggleTheme } = useTheme()
 import FlagIcon from 'vue3-flag-icons'
 import { useI18n } from 'vue-i18n'
-import { computed, watch } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
+import MobileNavigationBar from '@/components/NavigationBar/MobileNavigationBar.vue'
 
 const { locale } = useI18n({ useScope: 'global' })
 const router = useRouter()
 
+const isMobile = ref(false)
+
 const currentRouteName = computed(() => router.currentRoute.value.name)
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth <= 768
+}
 
 const handleLinkGithub = () => {
   window.open('https://github.com/Kab0tan', '_blank')
@@ -103,6 +110,14 @@ const handleHighlight = (routeName: string) => {
     return ''
   }
 }
+
+onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile)
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 watch(isLight, () => {
   toggleTheme()
 })
