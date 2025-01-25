@@ -10,10 +10,12 @@
         </div>
       </ElCol>
       <ElCol :span="8">
-        <div class="about__header__img-container">
-          <img src="@/assets/images/pdp.png" class="about__header__img" />
-          <div class="about__header__img--overlay" @click="handleLinkLinkedin">
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
+        <div class="about__header__col">
+          <div class="about__header__img-container">
+            <img src="@/assets/images/pdp.png" class="about__header__img" />
+            <div class="about__header__img--overlay" @click="handleLinkLinkedin">
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
+            </div>
           </div>
         </div>
       </ElCol>
