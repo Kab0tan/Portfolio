@@ -55,15 +55,27 @@
               :inactive-icon="Moon"
               inline-prompt
               :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
-            ></ElSwitch>
-            <button class="nav-btn--resume">
-              Resume
-              <FlagIcon code="gb" />
-            </button>
-            <button class="nav-btn--resume">
-              CV
-              <FlagIcon code="fr" />
-            </button>
+            />
+            <a
+              href="src\assets\resume\CV_justin_leddet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="nav-btn--resume">
+                Resume
+                <FlagIcon code="gb" />
+              </button>
+            </a>
+            <a
+              href="src\assets\resume\CV_justin_leddet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="nav-btn--resume">
+                CV
+                <FlagIcon code="fr" />
+              </button>
+            </a>
           </div>
         </ElCol>
       </ElRow>
