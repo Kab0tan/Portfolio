@@ -1,3 +1,8 @@
+import kanjiNoKabeImageUrl from '/src/assets/images/KanjinoKabe.png?url'
+import deezerImageUrl from '/src/assets/images/deezer.jpg?url'
+import spotifyImageUrl from '/src/assets/images/spotify.png?url'
+import quizImageUrl from '/src/assets/images/quizium.jpg?url'
+
 export const PORTFOLIO_TEXTS = {
   en: {
     title: 'Portfolio',
@@ -18,7 +23,7 @@ export const PORTFOLIO_TEXTS = {
         description: 'Small web appplication for practicing Kanjis from N5 to N1 Japanese level.',
         links: [
           {
-            src: 'src/assets/images/KanjinoKabe.png',
+            src: kanjiNoKabeImageUrl,
             link: 'https://github.com/Kab0tan/KanjiNoKabe/',
           },
         ],
@@ -39,7 +44,7 @@ export const PORTFOLIO_TEXTS = {
           I also made a previous version of the app on Flutter.`,
         links: [
           {
-            src: 'src/assets/images/quizium.jpg',
+            src: quizImageUrl,
             link: 'https://github.com/Kab0tan/Quizium',
           },
         ],
@@ -67,11 +72,11 @@ export const PORTFOLIO_TEXTS = {
           'A semi-automatic script that allows you to convert your Deezer library into a Spotify playlist.',
         links: [
           {
-            src: 'src/assets/images/deezer.jpg',
+            src: deezerImageUrl,
             link: '',
           },
           {
-            src: 'src/assets/images/spotify.png',
+            src: spotifyImageUrl,
             link: '',
           },
         ],
@@ -100,7 +105,7 @@ export const PORTFOLIO_TEXTS = {
         description: `Petite application web de quiz pour m'entraîner sur les Kanjis du niveau N5 à N1 en Japonais.`,
         links: [
           {
-            src: 'src/assets/images/KanjinoKabe.png',
+            src: kanjiNoKabeImageUrl,
             link: 'https://github.com/Kab0tan/KanjiNoKabe/',
           },
         ],
@@ -120,7 +125,7 @@ export const PORTFOLIO_TEXTS = {
          Question par question ou par un import CSV.`,
         links: [
           {
-            src: 'src/assets/images/quizium.jpg',
+            src: quizImageUrl,
             link: 'https://github.com/Kab0tan/Quizium',
           },
         ],
@@ -148,11 +153,11 @@ export const PORTFOLIO_TEXTS = {
           'Script semi-automatique permettant de convertir votre bibliotheque Deezer en une playlist Spotify.',
         links: [
           {
-            src: 'src/assets/images/deezer.jpg',
+            src: deezerImageUrl,
             link: '',
           },
           {
-            src: 'src/assets/images/spotify.png',
+            src: spotifyImageUrl,
             link: '',
           },
         ],

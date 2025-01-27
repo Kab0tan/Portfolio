@@ -1,3 +1,8 @@
+import instaImageUrl from '/src/assets/images/insta_sc.jpg?url'
+import leetcodeImageUrl from '/src/assets/images/leetcode_sc.jpg?url'
+import aocImageUrl from '/src/assets/images/aoc_sc.jpg?url'
+import codingameImageUrl from '/src/assets/images/codingame_sc.jpg?url'
+
 export const ABOUT_TEXTS = {
   en: {
     H1: 'Hi, my name is',
@@ -22,7 +27,7 @@ In addition, I remain curious and actively seek to learn about other topics that
           It was also the opportunity to develop my skills in photography and video, using Adobe softwares like Lightroom and Photoshop.`,
         links: [
           {
-            src: 'src/assets/images/insta_sc.jpg',
+            src: instaImageUrl,
             link: '',
           },
         ],
@@ -36,15 +41,15 @@ In addition, I remain curious and actively seek to learn about other topics that
         It's a yearly contest where you have to solve different algorithmic problems during 25 days.`,
         links: [
           {
-            src: 'src/assets/images/leetcode_sc.jpg',
+            src: leetcodeImageUrl,
             link: 'https://leetcode.com/problemset/',
           },
           {
-            src: 'src/assets/images/aoc_sc.jpg',
+            src: aocImageUrl,
             link: 'https://adventofcode.com/2024',
           },
           {
-            src: 'src/assets/images/codingame_sc.jpg',
+            src: codingameImageUrl,
             link: 'https://www.codingame.com/training',
           },
         ],
@@ -77,7 +82,7 @@ In addition, I remain curious and actively seek to learn about other topics that
          et également sur les logiciels Lightroom et Photoshop.`,
         links: [
           {
-            src: 'src/assets/images/insta_sc.jpg',
+            src: instaImageUrl,
             link: '',
           },
         ],
@@ -91,15 +96,15 @@ In addition, I remain curious and actively seek to learn about other topics that
         C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques pendant 25 jours avec une difficulté croissante.`,
         links: [
           {
-            src: 'src/assets/images/leetcode_sc.jpg',
+            src: leetcodeImageUrl,
             link: 'https://leetcode.com/problemset/',
           },
           {
-            src: 'src/assets/images/aoc_sc.jpg',
+            src: aocImageUrl,
             link: 'https://adventofcode.com/2024',
           },
           {
-            src: 'src/assets/images/codingame_sc.jpg',
+            src: codingameImageUrl,
             link: 'https://www.codingame.com/training',
           },
         ],

@@ -73,4 +73,14 @@ import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
 
 const content: ThemedCardContent[] = tm('about.content')
+
+// document.getElementById('image-container').src = instaImageUrl;
+// const imageElement = document.getElementById('image-container');
+
+// if (imageElement) {
+//   // If the element is found, set the src
+//   imageElement.src = instaImageUrl;
+// } else {
+//   console.error('Image container not found');
+// }
 </script>

@@ -9,10 +9,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   base: '/Portfolio/',
   plugins: [vue(), vueJsx(), vueDevTools()],
+  assetsInclude: ['**/*.png', '**/*.jpg'],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
+      '@images': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
       '@composables': fileURLToPath(new URL('./src/composables', import.meta.url)),
     },
