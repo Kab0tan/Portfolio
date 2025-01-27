@@ -57,13 +57,13 @@
       >
         Contact
       </RouterLink>
-      <a href="src\assets\resume\CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="src/assets/resume/CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
         <button class="nav-mobile-menu--btn">
           Resume
           <FlagIcon code="gb" />
         </button>
       </a>
-      <a href="src\assets\resume\CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="src/assets/resume/CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
         <button class="nav-mobile-menu--btn">
           CV
           <FlagIcon code="fr" />

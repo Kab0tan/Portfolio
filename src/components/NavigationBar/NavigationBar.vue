@@ -57,7 +57,7 @@
               :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
             />
             <a
-              href="src\assets\resume\CV_justin_leddet.pdf"
+              href="src/assets/resume/CV_justin_leddet.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +67,7 @@
               </button>
             </a>
             <a
-              href="src\assets\resume\CV_justin_leddet.pdf"
+              href="src/assets/resume/CV_justin_leddet.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
