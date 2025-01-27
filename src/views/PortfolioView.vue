@@ -8,8 +8,8 @@
       <span class="portfolio__content--title">Portfolio</span>
       <div class="portfolio__content--cards">
         <ThemedCard
-          v-for="item in tm('portfolio.content')"
-          :key="item"
+          v-for="(item, index) in content"
+          :key="index"
           :title="rt(item.title)"
           :tags="item.tags"
           :description="rt(item.description)"
@@ -24,8 +24,11 @@
 
 <script setup lang="ts">
 import './PortfolioView.scss'
+import type { ThemedCardContent } from '@/types.ts'
 import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
+
+const content: ThemedCardContent[] = tm('portfolio.content')
 </script>
