@@ -25,10 +25,11 @@
 <script setup lang="ts">
 import './PortfolioView.scss'
 import type { ThemedCardContent } from '@/types.ts'
+import { computed, type ComputedRef } from 'vue'
 import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
 
-const content: ThemedCardContent[] = tm('portfolio.content')
+const content: ComputedRef<ThemedCardContent[]> = computed(() => tm('portfolio.content'))
 </script>

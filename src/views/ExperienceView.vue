@@ -42,11 +42,12 @@
 <script setup lang="ts">
 import './ExperienceView.scss'
 import type { WorkCardContent } from '@/types'
+import { computed, type ComputedRef } from 'vue'
 import WorkCard from '@components/WorkCard/WorkCard.vue'
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
 
-const contentCareer: WorkCardContent[] = tm('experience.career')
-const contentEducation: WorkCardContent[] = tm('experience.education')
+const contentCareer: ComputedRef<WorkCardContent[]> = computed(() => tm('experience.career'))
+const contentEducation: ComputedRef<WorkCardContent[]> = computed(() => tm('experience.education'))
 </script>

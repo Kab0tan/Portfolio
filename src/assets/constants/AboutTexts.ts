@@ -73,7 +73,7 @@ In addition, I remain curious and actively seek to learn about other topics that
       En parallèle, je continue aussi de m'intéresser et me former à d'autres thématiques qui me passionnent comme l'IA, la cybersécurité ou le BigData.`,
     CONTENT: [
       {
-        title: 'Photography',
+        title: 'Photographie',
         description: `Je suis passionné par la photographie et la vidéo, mais principalement par la photographie.
         J'ai eu la chance de développer cette passion pendant mes études à Grenoble, au sein de l'association audiovisuelle de Grenoble-INP,
         INProd, où j'ai été vice-président entre 2021 et 2022, et également gestionnaire du matériel audiovisuel que l'on louait aux étudiants.
