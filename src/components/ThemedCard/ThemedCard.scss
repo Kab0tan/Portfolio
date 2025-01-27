@@ -20,16 +20,18 @@
     &--title {
       flex: 0 0 10%;
       font-size: $title;
-      color: var(--text-color-secondary);
+      color: var(--accent-color);
     }
     &--description {
       flex: 1;
       font-size: 1em;
+      color: var(--text-color);
     }
     &--icons {
       flex: 0 0 15%;
       font-size: $medium;
       margin-top: 1em;
+      color: var(--text-color);
     }
   }
 
@@ -50,7 +52,6 @@
     &--tag {
       font-size: 0.8em;
       border-radius: 50px;
-      border: 1px solid var(--text-color-secondary);
       padding: 0.2em 0.5em;
     }
   }

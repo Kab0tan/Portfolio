@@ -16,7 +16,7 @@
             :title="rt(item.title)"
             :description="rt(item.description)"
             :tags="item.tags"
-            :skills="rt(item.subjects)"
+            :skills="item.subjects"
           />
         </div>
       </div>
@@ -31,7 +31,7 @@
             :title="rt(item.title)"
             :description="rt(item.description)"
             :tags="item.tags"
-            :skills="rt(item.subjects)"
+            :skills="item.subjects"
           />
         </div>
       </div>

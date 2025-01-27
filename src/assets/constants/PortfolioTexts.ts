@@ -29,7 +29,7 @@ export const PORTFOLIO_TEXTS = {
         title: 'Quizium',
         tags: [
           { name: 'React Native', bgColor: '#61DAFB' },
-          { name: 'SQLite', bgColor: 'white', txtColor: '#003B57' },
+          { name: 'SQLite', bgColor: '#d6d6d6', txtColor: '#003B57' },
           { name: 'Expo', bgColor: '#000020', txtColor: 'white' },
           { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
         ],
@@ -111,7 +111,7 @@ export const PORTFOLIO_TEXTS = {
         title: 'Quizium',
         tags: [
           { name: 'React Native', bgColor: '#61DAFB' },
-          { name: 'SQLite', bgColor: 'white', txtColor: '#003B57' },
+          { name: 'SQLite', bgColor: ' #d6d6d6', txtColor: '#003B57' },
           { name: 'Expo', bgColor: '#000020', txtColor: 'white' },
           { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
         ],

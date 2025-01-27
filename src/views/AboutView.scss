@@ -14,11 +14,12 @@
 
     &--title {
       font-size: $title;
-      color: var(--secondary-color);
+      color: var(--accent-color);
     }
 
     &--subtitle {
       font-size: $subtitle-large;
+      font-weight: 600;
       color: var(--text-color);
     }
 
@@ -113,6 +114,10 @@
     padding: 6em;
     background-color: red;
   }
+}
+
+.highlight {
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {

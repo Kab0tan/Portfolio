@@ -14,21 +14,25 @@
 
   &--title {
     font-size: 1.5em;
-    border-bottom: 1px solid var(--text-color-secondary);
+    border-bottom: 1px solid var(--text-color);
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
+    color: var(--accent-color);
   }
   &--description {
     margin-bottom: 2em;
+    color: var(--text-color);
   }
   &--skills {
     background-color: var(--primary-color);
     border-radius: 50px;
     padding: 0.5em 0.75em;
     width: fit-content;
-    // border: 1px solid var(--text -color-secondary);
     margin-bottom: 0.5em;
-    color: var(--text-color-secondary);
+    color: var(--accent-color);
+  }
+  &--skills-text {
+    color: var(--text-color);
   }
 
   &__tags {
@@ -39,8 +43,9 @@
 
     &--tag {
       border-radius: 50px;
-      border: 1px solid var(--text-color-secondary);
+      border: 1px solid var(--text-color);
       padding: 0.2em 0.5em;
+      color: var(--text-color);
     }
   }
 }

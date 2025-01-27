@@ -23,8 +23,7 @@ a {
   align-items: center;
   height: 100%;
   border-top: 2px solid var(--accent-color);
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
-  // box-shadow: rgb(2 12 27 / 100%) 0px 10px 30px -10px;
+  box-shadow: rgb(22, 37, 60) 0px 7px 20px -10px;
 }
 
 .nav-row {
@@ -76,14 +75,13 @@ a {
   }
 
   &--resume:hover {
-    // background-color: rgba(0, 0, 0, 0.093);
     filter: brightness(0.8);
   }
 }
 
 .el-switch.theme-switch-dark {
-  --el-switch-on-color: #{$dark-gradient-alt};
-  --el-switch-off-color: #{$dark-gradient-alt};
+  --el-switch-on-color: #{$dark-gradient};
+  --el-switch-off-color: #{$dark-gradient};
 }
 .el-switch.theme-switch-light {
   --el-switch-on-color: #{$light-gradient};

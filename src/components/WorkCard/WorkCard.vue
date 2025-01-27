@@ -11,7 +11,10 @@
     </div>
     <div>
       <div class="work-card--skills">{{ t('experience.skills') }}:</div>
-      <span>{{ skills }}</span>
+      <span v-for="(skill, index) in skills" :key="skill" class="work-card--skills-text">
+        {{ skill }}
+        <span v-if="skills && index < skills.length - 1" class="highlight"> • </span>
+      </span>
     </div>
   </div>
 </template>
@@ -37,7 +40,7 @@ defineProps({
     required: true,
   },
   skills: {
-    type: String,
+    type: Array<string>,
     required: false,
   },
 })

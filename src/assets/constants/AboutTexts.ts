@@ -1,11 +1,11 @@
 export const ABOUT_TEXTS = {
   en: {
     H1: 'Hi, my name is',
-    TITLE: "I'm a software engineer.",
-    DESCRIPTION: `I am an engineer graduated from Grenoble-INP ENSE3 and currently based in Paris (France).
-     I followed a joint program with Grenoble-INP PHELMA, focused on image and signal processing,
+    TITLE: `I'm a software engineer<span class="highlight">.</span>`,
+    DESCRIPTION: `I am an engineer graduated from <span class="highlight">Grenoble-INP ENSE3</span> and currently based in Paris (France).
+     I followed a joint program with <span class="highlight">Grenoble-INP PHELMA</span>, focused on image and signal processing,
       with a strong emphasis on computer science and artificial intelligence. This included topics such as operating systems, C, Python, and Java programming.
-Throughout my studies, I developed a strong interest in programming, particularly in web development.
+Throughout my studies, I developed a strong interest in programming, particularly in <span class="highlight">web development</span>.
  This field was introduced to me through a digital specialization track at ENSE3, as well as through my involvement
   in various associations.
 My final-year internship as a Junior Fullstack Developer confirmed my desire to pursue a career
@@ -55,13 +55,13 @@ In addition, I remain curious and actively seek to learn about other topics that
   },
   fr: {
     H1: "Bonjour, je m'appelle",
-    TITLE: 'Je suis ingénieur logiciel.',
-    DESCRIPTION: `Je suis ingénieur diplomé de Grenoble-INP ENSE3 
-      et basé à Paris (France). J'ai suivi une filière commune avec l'école Grenoble-INP PHELMA, 
+    TITLE: 'Je suis ingénieur logiciel<span class="highlight">.</span>',
+    DESCRIPTION: `Je suis ingénieur diplomé de <span class="highlight">Grenoble-INP ENSE3</span>
+      et basé à Paris (France). J'ai suivi une filière commune avec l'école <span class="highlight">Grenoble-INP PHELMA</span>, 
       axée sur le traitement de l'image et du signal avec également une forte composante autour de 
       l'informatique et de l'IA, avec notamment de l'OS, du C, Python et Java. 
       Au fil de ma formation, j’ai développé un vif intérêt pour la programmation, et plus particulièrement pour
-      le développement web. Ce domaine m’a été introduit à travers un parcours numérique au sein de l’ENSE3, ainsi
+      le <span class="highlight">dévelopement web</span>. Ce domaine m’a été introduit à travers un parcours numérique au sein de l’ENSE3, ainsi
        que par mes engagements associatifs.
       Mon stage de fin d’études, en tant que développeur Fullstack Junior, a confirmé mon envie de poursuivre ma carrière dans cette voie.
       Je continue également de nourrir cette passion par des projets personnels, ce qui me permet d’approfondir mes compétences.

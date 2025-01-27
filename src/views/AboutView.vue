@@ -4,9 +4,11 @@
       <ElCol :span="16">
         <div class="about__header__text-container">
           <span class="about__header--title"> {{ t('about.h1') }} </span>
-          <span class="about__header--subtitle"> Justin Leddet. </span>
-          <span class="about__header--subtitle"> {{ t('about.title') }}</span>
-          <span class="about__header--description">{{ t('about.description') }}</span>
+          <span class="about__header--subtitle">
+            Justin Leddet<span class="highlight">.</span>
+          </span>
+          <span class="about__header--subtitle" v-html="t('about.title')"></span>
+          <span class="about__header--description" v-html="t('about.description')"></span>
         </div>
       </ElCol>
       <ElCol :span="8">

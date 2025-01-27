@@ -1,16 +1,20 @@
 //NB: in Navbar, special case where accent color is defined independently
 
-// Define your color constants
-$dark-primary-color: #69b6e4;
-$dark-secondary-color: #3f9ae4;
+// $dark-primary-color: #69b6e4;
+// $dark-secondary-color: #3f9ae4;
+// $dark-accent-color: #46f3ff;
+// $dark-text-color: #ffffff;
+// $dark-text-color-secondary: #000000;
+// $dark-background-color: #325693;
+$dark-primary-color: #102a44;
+$dark-secondary-color: #001122;
 $dark-accent-color: #46f3ff;
-$dark-text-color: #ffffff;
+$dark-text-color: #94b2c3;
 $dark-text-color-secondary: #000000;
-$dark-background-color: #325693;
+$dark-background-color: #000c1d;
 
 $light-primary-color: #ffdc99;
 $light-secondary-color: #fec98f;
-// $light-accent-color: #46f3ff;
 $light-text-color: #ff810d;
 $light-background-color: #ffffff;
 
@@ -24,15 +28,27 @@ $medium: 2em;
 $small: 1em;
 
 :root {
-  --primary-color: #69b6e4;
-  --secondary-color: #3f9ae4;
+  --primary-color: #102a44;
+  --secondary-color: #001122;
   --accent-color: #46f3ff;
-  --text-color: #ffffff;
+  --text-color: #94b2c3;
   --text-color-secondary: #000000;
-  --background-color: #325693;
-  --card-bg-color: #ffffff;
+  --background-color: #000c1d;
+
+  --card-bg-color: #000c1d;
+
   --btn-border-color: #0692c0;
   --btn-bg-color: #a7e7fc;
+
+  // --primary-color: #69b6e4;
+  // --secondary-color: #3f9ae4;
+  // --accent-color: #46f3ff;
+  // --text-color: #ffffff;
+  // --text-color-secondary: #000000;
+  // --background-color: #325693;
+  // --card-bg-color: #ffffff;
+  // --btn-border-color: #0692c0;
+  // --btn-bg-color: #a7e7fc;
 }
 
 :root[data-theme='light'] {
@@ -47,7 +63,7 @@ $small: 1em;
   --btn-bg-color: #fae8c6;
 }
 
-$dark-gradient: linear-gradient(to bottom, $dark-background-color, $dark-secondary-color);
+$dark-gradient: linear-gradient(to bottom, $dark-primary-color, #94b2c3);
 $light-gradient: linear-gradient(to bottom, #ff810d, $light-secondary-color);
 
 $dark-gradient-alt: linear-gradient(to bottom, #2b4485, #afcaff);
