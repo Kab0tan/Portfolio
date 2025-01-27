@@ -73,7 +73,4 @@ import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
 
 const content: ThemedCardContent[] = tm('about.content')
-
-console.log(typeof tm('about.content'))
-console.log(tm('about.content')[0].title)
 </script>

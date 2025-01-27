@@ -11,8 +11,8 @@
         <div class="dot-timeline"></div>
         <div class="cards-container">
           <WorkCard
-            v-for="item in tm('experience.career')"
-            :key="item"
+            v-for="(item, index) in contentCareer"
+            :key="index"
             :title="rt(item.title)"
             :description="rt(item.description)"
             :tags="item.tags"
@@ -26,8 +26,8 @@
         <div class="dot-timeline"></div>
         <div class="cards-container">
           <WorkCard
-            v-for="item in tm('experience.education')"
-            :key="item"
+            v-for="(item, index) in contentEducation"
+            :key="index"
             :title="rt(item.title)"
             :description="rt(item.description)"
             :tags="item.tags"
@@ -41,8 +41,12 @@
 
 <script setup lang="ts">
 import './ExperienceView.scss'
+import type { WorkCardContent } from '@/types'
 import WorkCard from '@components/WorkCard/WorkCard.vue'
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
+
+const contentCareer: WorkCardContent[] = tm('experience.career')
+const contentEducation: WorkCardContent[] = tm('experience.education')
 </script>
