@@ -29,7 +29,7 @@
         to="/"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('about') }"
-        @click="toggleMenu"
+        @click="handleToggle"
       >
         About
       </RouterLink>
@@ -37,7 +37,7 @@
         to="/experience"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('experience') }"
-        @click="toggleMenu"
+        @click="handleToggle"
       >
         Experience
       </RouterLink>
@@ -45,7 +45,7 @@
         to="/portfolio"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('portfolio') }"
-        @click="toggleMenu"
+        @click="handleToggle"
       >
         Portfolio
       </RouterLink>
@@ -53,7 +53,7 @@
         to="/contact"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('contact') }"
-        @click="toggleMenu"
+        @click="handleToggle"
       >
         Contact
       </RouterLink>
@@ -92,6 +92,14 @@ const { locale } = useI18n({ useScope: 'global' })
 const handleHighlight = (routeName: string) => {
   if (currentRouteName.value === routeName) return highlightColor.value
   return ''
+}
+
+const handleToggle = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'auto',
+  })
+  toggleMenu()
 }
 
 watch(isLight, () => {
