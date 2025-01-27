@@ -57,14 +57,18 @@
       >
         Contact
       </RouterLink>
-      <button class="nav-mobile-menu--btn">
-        Resume
-        <FlagIcon code="gb" />
-      </button>
-      <button class="nav-mobile-menu--btn">
-        CV
-        <FlagIcon code="fr" />
-      </button>
+      <a href="src\assets\resume\CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
+        <button class="nav-mobile-menu--btn">
+          Resume
+          <FlagIcon code="gb" />
+        </button>
+      </a>
+      <a href="src\assets\resume\CV_justin_leddet.pdf" target="_blank" rel="noopener noreferrer">
+        <button class="nav-mobile-menu--btn">
+          CV
+          <FlagIcon code="fr" />
+        </button>
+      </a>
     </div>
   </Transition>
 </template>

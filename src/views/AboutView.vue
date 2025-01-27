@@ -25,9 +25,9 @@
     <div v-else class="about__header">
       <div class="about__header__text-container">
         <span class="about__header--title"> {{ t('about.h1') }} </span>
-        <span class="about__header--subtitle"> Justin Leddet. </span>
-        <span class="about__header--subtitle"> {{ t('about.title') }}</span>
-        <span class="about__header--description">{{ t('about.description') }}</span>
+        <span class="about__header--subtitle"> Justin Leddet<span class="highlight">.</span> </span>
+        <span class="about__header--subtitle" v-html="t('about.title')"></span>
+        <span class="about__header--description" v-html="t('about.description')"></span>
         <div class="about__header__col">
           <div class="about__header__img-container">
             <img src="@/assets/images/pdp.png" class="about__header__img" />
