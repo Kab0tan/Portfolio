@@ -7,7 +7,6 @@
     align-items: start;
     justify-content: start;
     padding: 6em;
-    height: 330px;
     background-color: var(--background-color);
 
     &--title {
@@ -25,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 20px 6em;
+    padding: 20px 10em;
     background-color: var(--primary-color);
 
     &--title {
@@ -60,8 +59,22 @@
 .cards-container {
   position: relative;
   height: 80%;
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    &__header {
+      padding: 9em 2.5em 2em 2.5em;
+    }
+    &__content {
+      padding: 20px 2.5em;
+    }
+  }
+
+  .dot-timeline {
+    left: 20%;
+  }
 }

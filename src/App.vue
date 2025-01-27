@@ -1,10 +1,8 @@
 <template>
-  <div class="app-header">
+  <div class="app">
     <NavigationBar />
     <RouterView v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
+      <component :is="Component" />
     </RouterView>
   </div>
 </template>

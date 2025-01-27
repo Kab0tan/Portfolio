@@ -25,13 +25,19 @@
   </ElRow>
   <Transition name="slide">
     <div v-if="isMenuOpen" class="nav-mobile-menu">
-      <RouterLink to="/" class="nav-mobile-menu--text" :style="{ color: handleHighlight('about') }">
+      <RouterLink
+        to="/"
+        class="nav-mobile-menu--text"
+        :style="{ color: handleHighlight('about') }"
+        @click="toggleMenu"
+      >
         About
       </RouterLink>
       <RouterLink
         to="/experience"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('experience') }"
+        @click="toggleMenu"
       >
         Experience
       </RouterLink>
@@ -39,6 +45,7 @@
         to="/portfolio"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('portfolio') }"
+        @click="toggleMenu"
       >
         Portfolio
       </RouterLink>
@@ -46,6 +53,7 @@
         to="/contact"
         class="nav-mobile-menu--text"
         :style="{ color: handleHighlight('contact') }"
+        @click="toggleMenu"
       >
         Contact
       </RouterLink>
@@ -63,22 +71,28 @@
 
 <script setup lang="ts">
 import './MobileNavigationBar.scss'
+import { watch } from 'vue'
+import { storeToRefs } from 'pinia'
+import FlagIcon from 'vue3-flag-icons'
+import { useI18n } from 'vue-i18n'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { Moon, Sunny } from '@element-plus/icons-vue'
 import { useTheme } from '@/composables/useTheme.ts'
-import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
-import FlagIcon from 'vue3-flag-icons'
-import { useI18n } from 'vue-i18n'
 import { useNavBarStore } from '@/stores/navbar'
-import { storeToRefs } from 'pinia'
-import { watch } from 'vue'
+import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
+
+const { isLight, toggleTheme, highlightColor } = useTheme()
 
 const navBarStore = useNavBarStore()
-const { isMenuOpen } = storeToRefs(navBarStore)
-const { toggleMenu, handleHighlight } = navBarStore
+const { isMenuOpen, currentRouteName } = storeToRefs(navBarStore)
+const { toggleMenu } = navBarStore
 
-const { isLight, toggleTheme } = useTheme()
 const { locale } = useI18n({ useScope: 'global' })
+
+const handleHighlight = (routeName: string) => {
+  if (currentRouteName.value === routeName) return highlightColor.value
+  return ''
+}
 
 watch(isLight, () => {
   toggleTheme()

@@ -73,26 +73,23 @@
 
 <script setup lang="ts">
 import './NavigationBar.scss'
+import { watch, onMounted, onUnmounted } from 'vue'
+import { storeToRefs } from 'pinia'
+import FlagIcon from 'vue3-flag-icons'
+import { useI18n } from 'vue-i18n'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { Moon, Sunny } from '@element-plus/icons-vue'
 import { useTheme } from '@/composables/useTheme.ts'
-const { isLight, toggleTheme } = useTheme()
-import FlagIcon from 'vue3-flag-icons'
-import { useI18n } from 'vue-i18n'
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { useNavBarStore } from '@/stores/navbar'
 import MobileNavigationBar from '@/components/NavigationBar/MobileNavigationBar.vue'
 
+const { isLight, toggleTheme, highlightColor } = useTheme()
+
+const navBarStore = useNavBarStore()
+const { checkMobile } = navBarStore
+const { isMobile, currentRouteName } = storeToRefs(navBarStore)
+
 const { locale } = useI18n({ useScope: 'global' })
-const router = useRouter()
-
-const isMobile = ref(false)
-
-const currentRouteName = computed(() => router.currentRoute.value.name)
-
-const checkMobile = () => {
-  isMobile.value = window.innerWidth <= 768
-}
 
 const handleLinkGithub = () => {
   window.open('https://github.com/Kab0tan', '_blank')
@@ -102,13 +99,8 @@ const handleLinkLinkedin = () => {
 }
 
 const handleHighlight = (routeName: string) => {
-  if (isLight.value) {
-    if (currentRouteName.value === routeName) return '#ff810d'
-    return ''
-  } else {
-    if (currentRouteName.value === routeName) return '#46f3ff'
-    return ''
-  }
+  if (currentRouteName.value === routeName) return highlightColor.value
+  return ''
 }
 
 onMounted(() => {
