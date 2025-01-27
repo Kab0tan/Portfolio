@@ -42,8 +42,8 @@
       <span class="about__content--title">Hobbies</span>
       <div class="about__content--cards">
         <ThemedCard
-          v-for="msg in tm('about.content')"
-          :key="msg"
+          v-for="(msg, index) in content"
+          :key="index"
           :title="rt(msg.title)"
           :description="rt(msg.description)"
           :left="rt(msg.left)"
@@ -57,6 +57,7 @@
 
 <script setup lang="ts">
 import './AboutView.scss'
+import type { ThemedCardContent } from '@/types.ts'
 import { storeToRefs } from 'pinia'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
@@ -70,4 +71,9 @@ const handleLinkLinkedin = () => {
 
 import { useI18n } from 'vue-i18n'
 const { t, tm, rt } = useI18n()
+
+const content: ThemedCardContent[] = tm('about.content')
+
+console.log(typeof tm('about.content'))
+console.log(tm('about.content')[0].title)
 </script>
