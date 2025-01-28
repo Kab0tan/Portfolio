@@ -38,7 +38,7 @@ In addition, I remain curious and actively seek to learn about other topics that
         title: 'Coding problems',
         description: `A thing that I really enjoy during my spare time is solving coding problems.
          I usually do leetcode in various languages, but also every year Advent of Code.
-        It's a yearly contest where you have to solve different algorithmic problems during 25 days.`,
+        It's a yearly contest during which you have to solve different algorithmic problems within 25 days.`,
         links: [
           {
             src: leetcodeImageUrl,
@@ -93,7 +93,7 @@ In addition, I remain curious and actively seek to learn about other topics that
         title: 'Problèmes algorithmiques',
         description: `Un passe-temps que j'ai également est la résolution de problèmes d'algorithmies en ligne.
          Je fais généralement des problèmes sur Leetcode dans différents langages, mais aussi chaque année l'Advent of Code.
-        C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques pendant 25 jours avec une difficulté croissante.`,
+        C'est une compétition annuelle qui consiste à résoudre différents problèmes algorithmiques sur 25 jours avec une difficulté croissante.`,
         links: [
           {
             src: leetcodeImageUrl,
