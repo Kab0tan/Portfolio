@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,6 +19,14 @@ export default defineConfig({
       '@resume': fileURLToPath(new URL('./public/resume', import.meta.url)),
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
       '@composables': fileURLToPath(new URL('./src/composables', import.meta.url)),
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        404: resolve(__dirname, '404.html'),
+      },
     },
   },
 })
