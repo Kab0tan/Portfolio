@@ -62,7 +62,7 @@
                 <FlagIcon code="gb" />
               </button>
             </a>
-            <a :href="resumeEnURL" target="_blank" rel="noopener noreferrer">
+            <a :href="resumeFrURL" target="_blank" rel="noopener noreferrer">
               <button class="nav-btn--resume">
                 CV
                 <FlagIcon code="fr" />
@@ -77,7 +77,8 @@
 
 <script setup lang="ts">
 import './NavigationBar.scss'
-import resumeEnURL from '/resume/CV_justin_leddet.pdf?url'
+import resumeEnURL from '/resume/CV_justin_leddet_EN.pdf?url'
+import resumeFrURL from '/resume/CV_justin_leddet.pdf?url'
 import { watch, onMounted, onUnmounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import FlagIcon from 'vue3-flag-icons'
