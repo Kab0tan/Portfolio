@@ -162,7 +162,7 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: `Chef de projet et responsable des Systems d'Informations • Junior Entreprise ENSE3`,
+        title: `Chef de projet et responsable des Systèmes d'Informations • Junior Entreprise ENSE3`,
         tags: [
           { name: '2020-2022' },
           { name: 'Association' },
