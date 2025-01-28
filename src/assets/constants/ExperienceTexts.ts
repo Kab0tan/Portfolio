@@ -50,6 +50,23 @@ export const EXPERIENCE_TEXTS = {
           'Scikit-learn',
         ],
       },
+      {
+        title: 'Project Manager and IT officer • Junior Enterprise ENSE3',
+        tags: [
+          { name: '2020-2022' },
+          { name: 'Association' },
+          { name: 'Grenoble' },
+          { name: 'France' },
+        ],
+        description: `The students run their own company, solicit and perform professional projects for firms in the area.
+         I was in charge the IT system of our nonprofit organization and project manager.`,
+        subjects: [
+          'Google Workspace',
+          'Microsoft Office',
+          'Project Management',
+          'Client Collaboration',
+        ],
+      },
     ],
     education: [
       {
@@ -81,11 +98,11 @@ export const EXPERIENCE_TEXTS = {
         title: 'Preparatory Classes for Engineering Schools • PCSI-PC',
         tags: [{ name: '2017-2020' }, { name: 'Paris' }, { name: 'France' }],
         description:
-          'Preparatory classes at Charlemagne Highschool in Physics, Mathematics and Chemistry.',
+          'Three-year undergraduate intensive course in Physics, Mathematics and Chemistry at Charlemagne Highschool.',
         subjects: ['Mathematics', 'Physics', 'Chemistry', 'Python'],
       },
       {
-        title: 'Scientific High School Diploma • High Honors',
+        title: 'Scientific High School Diploma • First Class Honors',
         tags: [{ name: '2014-2017' }, { name: 'Paris' }, { name: 'France' }],
         description:
           'Science track with Earth and Life Sciences option, at ENCPB Pierre-Gilles-de-Gennes Highschool.',
@@ -143,6 +160,18 @@ export const EXPERIENCE_TEXTS = {
           'Tensorflow',
           'Scikit-learn',
         ],
+      },
+      {
+        title: `Chef de projet et responsable des Systems d'Informations • Junior Entreprise ENSE3`,
+        tags: [
+          { name: '2020-2022' },
+          { name: 'Association' },
+          { name: 'Grenoble' },
+          { name: 'France' },
+        ],
+        description: `Gestion des systèmes informatiques de la Junior, rédaction de conventions d’études, suivi de missions, 
+        mission interne de révisions de templates pour des conventions d’études réalisées par la Junior.`,
+        subjects: ['Google Workspace', 'Microsoft Office', 'Gestion de projet', 'Relation client'],
       },
     ],
     education: [
