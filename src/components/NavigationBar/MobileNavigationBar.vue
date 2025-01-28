@@ -76,7 +76,7 @@
 <script setup lang="ts">
 import './MobileNavigationBar.scss'
 import resumeEnURL from '/resume/CV_justin_leddet_EN.pdf?url'
-import resumeFrURL from '/resume/CV_justin_leddet.pdf?url'
+import resumeFrURL from '/resume/CV_justin_leddet_FR.pdf?url'
 import { watch } from 'vue'
 import { storeToRefs } from 'pinia'
 import FlagIcon from 'vue3-flag-icons'
