@@ -5,6 +5,7 @@
       <ElRow v-else class="nav-row">
         <ElCol :span="8">
           <div class="nav-left">
+            <img src="/favicon.ico" class="nav-logo" />
             <RouterLink to="/" class="nav-text" :style="{ color: handleHighlight('about') }"
               >About</RouterLink
             >

@@ -1,26 +1,29 @@
 <template>
   <ElRow class="nav-mobile-row">
-    <ThemedSwitch
-      v-model:model-value="locale"
-      :is-icon="false"
-      active-text="en"
-      inactive-text="fr"
-      :bg-color="isLight"
-    />
-    <ThemedSwitch v-model:model-value="isLight" :active-icon="Sunny" :inactive-icon="Moon" />
-    <div class="nav-mobile-icon-container">
-      <FontAwesomeIcon
-        v-if="!isMenuOpen"
-        @click="toggleMenu"
-        icon="fa-solid fa-bars"
-        class="nav-mobile-text--icon"
+    <img src="/favicon.ico" class="nav-mobile-logo" />
+    <div class="nav-mobile-right">
+      <ThemedSwitch
+        v-model:model-value="locale"
+        :is-icon="false"
+        active-text="en"
+        inactive-text="fr"
+        :bg-color="isLight"
       />
-      <FontAwesomeIcon
-        v-else
-        @click="toggleMenu"
-        icon="fa-solid fa-xmark"
-        class="nav-mobile-text--icon"
-      />
+      <ThemedSwitch v-model:model-value="isLight" :active-icon="Sunny" :inactive-icon="Moon" />
+      <div class="nav-mobile-icon-container">
+        <FontAwesomeIcon
+          v-if="!isMenuOpen"
+          @click="toggleMenu"
+          icon="fa-solid fa-bars"
+          class="nav-mobile-text--icon"
+        />
+        <FontAwesomeIcon
+          v-else
+          @click="toggleMenu"
+          icon="fa-solid fa-xmark"
+          class="nav-mobile-text--icon"
+        />
+      </div>
     </div>
   </ElRow>
   <Transition name="slide">

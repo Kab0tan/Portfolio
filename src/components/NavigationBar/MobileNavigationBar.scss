@@ -1,12 +1,19 @@
 .nav-mobile-row {
   background-color: var(--background-color);
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.nav-mobile-logo {
+  width: 3em;
+}
+
+.nav-mobile-right {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  justify-content: end;
-  align-items: center;
-  z-index: 9999;
 }
 
 .nav-mobile-icon-container {
