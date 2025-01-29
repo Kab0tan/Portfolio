@@ -12,7 +12,7 @@
         :popper-style="{ textAlign: 'center' }"
       >
         <template #reference>
-          <button class="contact-btn" @click="copyToClipboard">justinleddet@gmail.com</button>
+          <button class="contact-btn" @click="copyToClipboard">leddet.ginp@gmail.com</button>
         </template>
       </ElPopover>
     </div>
