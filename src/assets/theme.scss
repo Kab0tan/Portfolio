@@ -1,11 +1,5 @@
 //NB: in Navbar, special case where accent color is defined independently
 
-// $dark-primary-color: #69b6e4;
-// $dark-secondary-color: #3f9ae4;
-// $dark-accent-color: #46f3ff;
-// $dark-text-color: #ffffff;
-// $dark-text-color-secondary: #000000;
-// $dark-background-color: #325693;
 $dark-primary-color: #102a44;
 $dark-secondary-color: #001122;
 $dark-accent-color: #46f3ff;
@@ -39,16 +33,6 @@ $small: 1em;
 
   --btn-border-color: #0692c0;
   --btn-bg-color: #a7e7fc;
-
-  // --primary-color: #69b6e4;
-  // --secondary-color: #3f9ae4;
-  // --accent-color: #46f3ff;
-  // --text-color: #ffffff;
-  // --text-color-secondary: #000000;
-  // --background-color: #325693;
-  // --card-bg-color: #ffffff;
-  // --btn-border-color: #0692c0;
-  // --btn-bg-color: #a7e7fc;
 }
 
 :root[data-theme='light'] {

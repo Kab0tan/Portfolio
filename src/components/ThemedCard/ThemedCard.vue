@@ -151,7 +151,6 @@ const handleLeftCard = () => {
 }
 
 const handleLinkGithub = (githubLink: string) => {
-  console.log(githubLink)
   window.open(githubLink, '_blank')
 }
 </script>
