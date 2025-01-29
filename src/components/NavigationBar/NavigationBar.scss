@@ -31,6 +31,8 @@ a {
 }
 .nav-left {
   display: flex;
+  flex-direction: row;
+  gap: 1em;
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
@@ -39,7 +41,7 @@ a {
 .nav-right {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 1em;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -52,7 +54,7 @@ a {
 .nav-text {
   color: var(--text-color);
   font-size: 1em;
-  padding: 7px 15px;
+  // padding: 7px 15px;
   border-radius: 10px;
   transition: all 0.5s ease;
 
