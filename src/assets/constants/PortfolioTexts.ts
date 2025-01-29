@@ -2,6 +2,7 @@ import kanjiNoKabeImageUrl from '/src/assets/images/KanjinoKabe.png?url'
 import deezerImageUrl from '/src/assets/images/deezer.jpg?url'
 import spotifyImageUrl from '/src/assets/images/spotify.png?url'
 import quizImageUrl from '/src/assets/images/quizium.jpg?url'
+import histoImageUrl from '/src/assets/images/histoProject.png?url'
 
 export const PORTFOLIO_TEXTS = {
   en: {
@@ -66,6 +67,29 @@ export const PORTFOLIO_TEXTS = {
         left: 'true',
       },
       {
+        title: 'HistoProject',
+        tags: [
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'SCSS', bgColor: '#c69', txtColor: 'white' },
+          { name: 'Vite', bgColor: '#ffcb3b' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+          { name: 'Javascript', bgColor: '#f7df65' },
+          { name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' },
+          { name: 'Flask', bgColor: '#3BABC3' },
+          { name: 'PostgreSQL', bgColor: '#336791', txtColor: 'white' },
+        ],
+        description: `Small WIP webapp to vizualize data from Meta conversations (Facebook & Instagram).
+        The app allows you to vizualize all messages from past conversations with someone by year, month or day.`,
+        links: [
+          {
+            src: histoImageUrl,
+            link: '',
+          },
+        ],
+        github: '',
+        left: 'false',
+      },
+      {
         title: 'deezer-to-spotify',
         tags: [{ name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' }],
         description:
@@ -80,7 +104,7 @@ export const PORTFOLIO_TEXTS = {
             link: '',
           },
         ],
-        left: 'false',
+        left: 'true',
         github: 'https://github.com/Kab0tan/deezer-to-spotify',
       },
     ],
@@ -147,6 +171,29 @@ export const PORTFOLIO_TEXTS = {
         left: 'true',
       },
       {
+        title: 'HistoProject',
+        tags: [
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'SCSS', bgColor: '#c69', txtColor: 'white' },
+          { name: 'Vite', bgColor: '#ffcb3b' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+          { name: 'Javascript', bgColor: '#f7df65' },
+          { name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' },
+          { name: 'Flask', bgColor: '#3BABC3' },
+          { name: 'PostgreSQL', bgColor: '#336791', txtColor: 'white' },
+        ],
+        description: `Petite application web (WIP) pour visualiser les données des conversations Meta (Facebook & Instagram).
+        L'application permet de visualiser tous les messages des conversations passées avec quelqu'un, triés par année, mois ou jour.`,
+        links: [
+          {
+            src: histoImageUrl,
+            link: '',
+          },
+        ],
+        github: '',
+        left: 'false',
+      },
+      {
         title: 'deezer-to-spotify',
         tags: [{ name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' }],
         description:
@@ -162,7 +209,7 @@ export const PORTFOLIO_TEXTS = {
           },
         ],
         github: 'https://github.com/Kab0tan/deezer-to-spotify',
-        left: 'false',
+        left: 'true',
       },
     ],
   },

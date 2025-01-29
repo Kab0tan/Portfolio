@@ -3,7 +3,7 @@
     <nav class="nav-container">
       <MobileNavigationBar v-if="isMobile" />
       <ElRow v-else class="nav-row">
-        <ElCol :span="8">
+        <ElCol :span="10">
           <div class="nav-left">
             <img src="/favicon.ico" class="nav-logo" />
             <RouterLink to="/" class="nav-text" :style="{ color: handleHighlight('about') }"
@@ -39,7 +39,7 @@
             />
           </div>
         </ElCol>
-        <ElCol :span="8" :offset="8">
+        <ElCol :span="8" :offset="6">
           <div class="nav-right">
             <ElSwitch
               v-model="locale"
