@@ -7,7 +7,6 @@ export function useTheme() {
   const toggleTheme = () => {
     highlightColor.value = isLight.value ? '#ff810d' : '#46f3ff'
     document.documentElement.setAttribute('data-theme', isLight.value ? 'light' : 'dark')
-    console.log(highlightColor.value)
   }
 
   return {
