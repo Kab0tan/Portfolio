@@ -1,4 +1,4 @@
-@import '@assets/theme.scss';
+@use '@assets/theme.scss' as *;
 
 .themed-card {
   background-color: var(--card-bg-color);
@@ -26,12 +26,14 @@
       flex: 1;
       font-size: 1em;
       color: var(--text-color);
+      z-index: 100;
     }
     &--icons {
       flex: 0 0 15%;
       font-size: $medium;
       margin-top: 1em;
       color: var(--text-color);
+      z-index: 100;
     }
   }
 
@@ -63,7 +65,7 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $max-width) {
   .themed-card {
     width: 100%;
     &__image {

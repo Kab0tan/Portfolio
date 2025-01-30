@@ -10,7 +10,7 @@ export const useNavBarStore = defineStore('navbar', () => {
   const currentRouteName = computed(() => router.currentRoute.value.name)
 
   const checkMobile = () => {
-    isMobile.value = window.innerWidth <= 768
+    isMobile.value = window.innerWidth <= 900
   }
 
   const toggleMenu = () => {

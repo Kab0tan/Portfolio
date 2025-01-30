@@ -1,4 +1,4 @@
-@import '@assets/theme.scss';
+@use '@assets/theme.scss' as *;
 
 .experience {
   &__header {
@@ -64,7 +64,7 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $max-width) {
   .experience {
     &__header {
       padding: 9em 2.5em 2em 2.5em;

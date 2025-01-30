@@ -1,4 +1,4 @@
-@import '@assets/theme.scss';
+@use '@assets/theme.scss' as *;
 
 .themed-switch {
   height: var(--size) !important;
