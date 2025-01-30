@@ -1,4 +1,4 @@
-@import '@assets/theme.scss';
+@use '@assets/theme.scss' as *;
 
 .about {
   &__header {
@@ -120,7 +120,7 @@
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $max-width) {
   .about {
     &__header {
       padding: 9em 0 2em 0;

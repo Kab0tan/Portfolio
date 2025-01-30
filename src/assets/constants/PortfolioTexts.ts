@@ -63,7 +63,7 @@ export const PORTFOLIO_TEXTS = {
           { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
         ],
         description: "My personal portfolio website that you're currently on.",
-        github: '',
+        github: 'https://github.com/Kab0tan/Portfolio',
         left: 'true',
       },
       {
@@ -167,7 +167,7 @@ export const PORTFOLIO_TEXTS = {
           { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },
         ],
         description: 'Mon site portfolio personnel sur lequel vous êtes actuellement.',
-        github: '',
+        github: 'https://github.com/Kab0tan/Portfolio',
         left: 'true',
       },
       {

@@ -1,4 +1,4 @@
-@import '@assets/theme.scss';
+@use '@assets/theme.scss' as *;
 
 .work-card {
   display: flex;
