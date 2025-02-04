@@ -12,7 +12,7 @@
         :popper-style="{ textAlign: 'center' }"
       >
         <template #reference>
-          <button class="contact-btn" @click="copyToClipboard">leddet.ginp@gmail.com</button>
+          <button class="contact-btn" @click="copyToClipboard">leddetj.ginp@gmail.com</button>
         </template>
       </ElPopover>
     </div>
@@ -27,7 +27,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const copyToClipboard = () => {
-  const email = 'justinleddet@gmail.com'
+  const email = 'leddetj.ginp@gmail.com'
   navigator.clipboard.writeText(email)
   ElMessage({
     message: 'Copied.',
