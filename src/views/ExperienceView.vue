@@ -10,14 +10,8 @@
       <div class="experience__content__container">
         <div class="dot-timeline"></div>
         <div class="cards-container">
-          <WorkCard
-            v-for="(item, index) in contentCareer"
-            :key="index"
-            :title="rt(item.title)"
-            :description="rt(item.description)"
-            :tags="item.tags"
-            :skills="item.subjects"
-          />
+          <WorkCard v-for="(item, index) in contentCareer" :key="index" :title="rt(item.title)"
+            :company="rt(item.company)" :description="rt(item.description)" :tags="item.tags" :skills="item.subjects" />
         </div>
       </div>
       <!-- formation -->
@@ -25,14 +19,8 @@
       <div class="experience__content__container">
         <div class="dot-timeline"></div>
         <div class="cards-container">
-          <WorkCard
-            v-for="(item, index) in contentEducation"
-            :key="index"
-            :title="rt(item.title)"
-            :description="rt(item.description)"
-            :tags="item.tags"
-            :skills="item.subjects"
-          />
+          <WorkCard v-for="(item, index) in contentEducation" :key="index" :title="rt(item.title)"
+            :company="rt(item.company)" :description="rt(item.description)" :tags="item.tags" :skills="item.subjects" />
         </div>
       </div>
     </div>
