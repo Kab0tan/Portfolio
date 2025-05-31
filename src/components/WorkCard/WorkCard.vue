@@ -1,7 +1,7 @@
 <template>
   <div class="work-card">
     <div class="work-card--title">
-      {{ title }}
+      {{ title }}<span v-if="company" style="color: white"> • {{ company }}</span>
     </div>
     <ElRow class="work-card__tags">
       <div v-for="tag in tags" :key="tag.name" class="work-card__tags--tag">{{ tag.name }}</div>
@@ -30,6 +30,10 @@ defineProps({
   title: {
     type: String,
     required: true,
+  },
+  company: {
+    type: String,
+    default: '',
   },
   tags: {
     type: Array<Tag>,

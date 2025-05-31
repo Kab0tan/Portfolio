@@ -11,7 +11,17 @@ export const EXPERIENCE_TEXTS = {
     educationTitle: 'Education',
     career: [
       {
-        title: 'Junior Fullstack Developer • EPISTO',
+        title: 'Front-end & Mobile Developer',
+        company: 'Seven',
+        tags: [{ name: '2025-now' }, { name: 'Paris' }, { name: 'France' }],
+        description: `I'm currently working as a Front-end and Mobile Developer at startup Seven on their product OpenAleph.
+        I'm part of the dev team and participate in the development of the Frontend of the application with framework
+         Vue.js, and the mobile application with framework Flutter.`,
+        subjects: ['Vue.js', 'Javascript', 'Flutter', 'Dart', 'Git', 'Gitlab', 'Docker', 'Agile'],
+      },
+      {
+        title: 'Junior Fullstack Developer',
+        company: 'EPISTO',
         tags: [{ name: '2023-2024' }, { name: 'Paris' }, { name: 'France' }],
         description: `6-month internship within the Tech team of the startup EPISTO for 
         Frontend and Backend development of their web platform using the 
@@ -31,7 +41,8 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: 'International Research Student • Okayama University',
+        title: 'International Research Student',
+        company: 'Okayama University',
         tags: [{ name: '2023' }, { name: 'Okayama' }, { name: 'Japan' }],
         description: `6-month research internship on Natural Language Processing 
         using deep neural networks with Python. The research focused on detecting and classifying
@@ -51,7 +62,8 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: 'Project Manager and IT officer • Junior Enterprise ENSE3',
+        title: 'Project Manager and IT officer',
+        company: 'Junior Enterprise ENSE3',
         tags: [
           { name: '2020-2022' },
           { name: 'Association' },
@@ -70,7 +82,8 @@ export const EXPERIENCE_TEXTS = {
     ],
     education: [
       {
-        title: 'Engineering Degree • Grenoble-INP ENSE3 / PHELMA',
+        title: 'Engineering Degree',
+        company: 'Grenoble-INP ENSE3 / PHELMA',
         tags: [{ name: '2020-2024' }, { name: 'Grenoble' }, { name: 'France' }],
         description: `Engineering studies at Grenoble-INP ENSE3 (National Graduate School of Energy, Water, and Environment). 
           SICOM program (Signal, Image, Communication, Multimedia), shared with Grenoble-INP PHELMA.`,
@@ -95,7 +108,8 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: 'Preparatory Classes for Engineering Schools • PCSI-PC',
+        title: 'Preparatory Classes for Engineering Schools',
+        company: 'PCSI-PC',
         tags: [{ name: '2017-2020' }, { name: 'Paris' }, { name: 'France' }],
         description:
           'Three-year undergraduate intensive course in Physics, Mathematics and Chemistry at Charlemagne Highschool.',
@@ -103,6 +117,7 @@ export const EXPERIENCE_TEXTS = {
       },
       {
         title: 'Scientific High School Diploma • First Class Honors',
+        company: '',
         tags: [{ name: '2014-2017' }, { name: 'Paris' }, { name: 'France' }],
         description:
           'Science track with Earth and Life Sciences option, at ENCPB Pierre-Gilles-de-Gennes Highschool.',
@@ -122,7 +137,17 @@ export const EXPERIENCE_TEXTS = {
     educationTitle: 'Formation',
     career: [
       {
-        title: 'Développeur Fullstack junior • EPISTO ',
+        title: 'Développeur Frontend & Mobile',
+        company: 'Seven',
+        tags: [{ name: `2025-aujourd'hui` }, { name: 'Paris' }, { name: 'France' }],
+        description: `Je travaille actuellement en tant que Developpeur Frontend et Mobile chez Seven.
+        Je suis membre de l'équipe Tech et participe au developpement de l'application web OpenAleph avec le 
+        framework Vue.js, et de l'application mobile avec le framework Flutter.`,
+        subjects: ['Vue.js', 'Javascript', 'Flutter', 'Dart', 'Git', 'Gitlab', 'Docker', 'Agile'],
+      },
+      {
+        title: 'Développeur Fullstack junior',
+        company: 'EPISTO',
         tags: [{ name: '2023-2024' }, { name: 'Paris' }, { name: 'France' }],
         description: `Stage de 6 mois au sein de l’équipe Tech de la startup EPISTO pour 
         le développement Frontend et Backend de leur plateforme web sous les 
@@ -142,7 +167,8 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: "Etudiant chercheur international • Université d'Okayama",
+        title: 'Etudiant chercheur international',
+        company: 'Université Okayama',
         tags: [{ name: '2023' }, { name: 'Okayama' }, { name: 'Japon' }],
         description: `Stage de recherche de 6 mois sur le Traitement Automatique 
         des Langues à l'aide de réseaux de neurones profonds sous Python. Le sujet de recherche était la détection et classification
@@ -162,7 +188,8 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: `Chef de projet et responsable des Systèmes d'Informations • Junior Entreprise ENSE3`,
+        title: `Chef de projet et responsable des Systèmes d'Informations`,
+        company: 'Junior Enterprise ENSE3',
         tags: [
           { name: '2020-2022' },
           { name: 'Association' },
@@ -176,7 +203,8 @@ export const EXPERIENCE_TEXTS = {
     ],
     education: [
       {
-        title: "Diplôme d'ingénieur • Grenoble-INP ENSE3 / PHELMA ",
+        title: "Diplôme d'ingénieur ",
+        company: 'Grenoble-INP ENSE3 / PHELMA',
         tags: [{ name: '2020-2024' }, { name: 'Grenoble' }, { name: 'France' }],
         description: `Etudes d'ingénieurs au sein de Grenoble-INP ENSE3 (Ecole Nationale Supérieure
          de l'Energie, de l'Eau et de l'Environnement). 
@@ -203,13 +231,15 @@ export const EXPERIENCE_TEXTS = {
         ],
       },
       {
-        title: 'Classes préparatoires aux Grandes Ecoles • PCSI-PC',
+        title: 'Classes préparatoires aux Grandes Ecoles',
+        company: 'PCSI-PC',
         tags: [{ name: '2017-2020' }, { name: 'Paris' }, { name: 'France' }],
         description: 'Classes de prépas PCSI-PC au sein du Lycée Charlemagne.',
         subjects: ['Mathématiques', 'Physique', 'Chimie', 'Python'],
       },
       {
         title: 'BAC Scientifique • Mention Très Bien',
+        company: '',
         tags: [{ name: '2014-2017' }, { name: 'Paris' }, { name: 'France' }],
         description:
           'Filière S, option Science et Vie de la Terre, au sein du Lycée ENCPB Pierre-Gilles-de-Gennes',

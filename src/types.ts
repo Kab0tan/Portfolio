@@ -20,6 +20,7 @@ export interface ThemedCardContent {
 
 export interface WorkCardContent {
   title: string
+  company: string
   tags: Tag[]
   description: string
   subjects: string[]
