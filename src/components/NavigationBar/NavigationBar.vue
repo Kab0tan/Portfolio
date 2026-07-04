@@ -7,25 +7,25 @@
           <div class="nav-left">
             <img src="/favicon.ico" class="nav-logo" />
             <RouterLink to="/" class="nav-text" :style="{ color: handleHighlight('about') }"
-              >About</RouterLink
+              >{{ t('nav.about') }}</RouterLink
             >
             <RouterLink
               to="/experience"
               class="nav-text"
               :style="{ color: handleHighlight('experience') }"
-              >Experience</RouterLink
+              >{{ t('nav.experience') }}</RouterLink
             >
             <RouterLink
               to="/portfolio"
               class="nav-text"
               :style="{ color: handleHighlight('portfolio') }"
-              >Portfolio</RouterLink
+              >{{ t('nav.portfolio') }}</RouterLink
             >
             <RouterLink
               to="/contact"
               class="nav-text"
               :style="{ color: handleHighlight('contact') }"
-              >Contact</RouterLink
+              >{{ t('nav.contact') }}</RouterLink
             >
             <FontAwesomeIcon
               @click="handleLinkGithub"
@@ -41,31 +41,23 @@
         </ElCol>
         <ElCol :span="8" :offset="6">
           <div class="nav-right">
-            <ElSwitch
-              v-model="locale"
-              active-value="en"
-              inactive-value="fr"
-              inline-prompt
+            <ThemedSwitch
+              v-model:model-value="locale"
+              :is-icon="false"
               active-text="en"
               inactive-text="fr"
-              :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
+              :bg-color="isLight"
             />
-            <ElSwitch
-              v-model="isLight"
-              :active-icon="Sunny"
-              :inactive-icon="Moon"
-              inline-prompt
-              :class="isLight ? 'theme-switch-light' : 'theme-switch-dark'"
-            />
+            <ThemedSwitch v-model:model-value="isLight" :active-icon="Sunny" :inactive-icon="Moon" />
             <a :href="resumeEnURL" target="_blank" rel="noopener noreferrer">
               <button class="nav-btn--resume">
-                Resume
+                {{ t('nav.resume') }}
                 <FlagIcon code="gb" />
               </button>
             </a>
             <a :href="resumeFrURL" target="_blank" rel="noopener noreferrer">
               <button class="nav-btn--resume">
-                CV
+                {{ t('nav.cv') }}
                 <FlagIcon code="fr" />
               </button>
             </a>
@@ -89,6 +81,7 @@ import { Moon, Sunny } from '@element-plus/icons-vue'
 import { useTheme } from '@/composables/useTheme.ts'
 import { useNavBarStore } from '@/stores/navbar'
 import MobileNavigationBar from '@/components/NavigationBar/MobileNavigationBar.vue'
+import ThemedSwitch from '@/components/ThemedSwitch/ThemedSwitch.vue'
 
 const { isLight, toggleTheme, highlightColor } = useTheme()
 
@@ -96,7 +89,7 @@ const navBarStore = useNavBarStore()
 const { checkMobile } = navBarStore
 const { isMobile, currentRouteName } = storeToRefs(navBarStore)
 
-const { locale } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 
 const handleLinkGithub = () => {
   window.open('https://github.com/Kab0tan', '_blank')

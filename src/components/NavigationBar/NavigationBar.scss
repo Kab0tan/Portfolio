@@ -83,22 +83,6 @@ a {
   }
 }
 
-.el-switch.theme-switch-dark {
-  --el-switch-on-color: #{$dark-gradient};
-  --el-switch-off-color: #{$dark-gradient};
-}
-.el-switch.theme-switch-light {
-  --el-switch-on-color: #{$light-gradient};
-  --el-switch-off-color: #{$light-gradient};
-}
-
-.el-switch.theme-switch-light .el-switch__core .el-switch__action {
-  background-color: white;
-}
-.el-switch.theme-switch-dark .el-switch__core .el-switch__action {
-  background-color: white;
-}
-
 .mobile-menu {
   display: none;
   cursor: pointer;

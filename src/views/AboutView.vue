@@ -14,7 +14,7 @@
       <ElCol :span="8">
         <div class="about__header__col">
           <div class="about__header__img-container">
-            <img src="@/assets/images/pdp.png" class="about__header__img" />
+            <img src="@/assets/images/pdp.webp" class="about__header__img" alt="Justin Leddet" />
             <div class="about__header__img--overlay" @click="handleLinkLinkedin">
               <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
             </div>
@@ -30,7 +30,7 @@
         <span class="about__header--description" v-html="t('about.description')"></span>
         <div class="about__header__col">
           <div class="about__header__img-container">
-            <img src="@/assets/images/pdp.png" class="about__header__img" />
+            <img src="@/assets/images/pdp.webp" class="about__header__img" alt="Justin Leddet" />
             <div class="about__header__img--overlay" @click="handleLinkLinkedin">
               <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
             </div>
