@@ -34,7 +34,7 @@
         :style="{ color: handleHighlight('about') }"
         @click="handleToggle"
       >
-        About
+        {{ t('nav.about') }}
       </RouterLink>
       <RouterLink
         to="/experience"
@@ -42,7 +42,7 @@
         :style="{ color: handleHighlight('experience') }"
         @click="handleToggle"
       >
-        Experience
+        {{ t('nav.experience') }}
       </RouterLink>
       <RouterLink
         to="/portfolio"
@@ -50,7 +50,7 @@
         :style="{ color: handleHighlight('portfolio') }"
         @click="handleToggle"
       >
-        Portfolio
+        {{ t('nav.portfolio') }}
       </RouterLink>
       <RouterLink
         to="/contact"
@@ -58,17 +58,17 @@
         :style="{ color: handleHighlight('contact') }"
         @click="handleToggle"
       >
-        Contact
+        {{ t('nav.contact') }}
       </RouterLink>
       <a :href="resumeEnURL" target="_blank" rel="noopener noreferrer">
         <button class="nav-mobile-menu--btn">
-          Resume
+          {{ t('nav.resume') }}
           <FlagIcon code="gb" />
         </button>
       </a>
       <a :href="resumeFrURL" target="_blank" rel="noopener noreferrer">
         <button class="nav-mobile-menu--btn">
-          CV
+          {{ t('nav.cv') }}
           <FlagIcon code="fr" />
         </button>
       </a>
@@ -96,7 +96,7 @@ const navBarStore = useNavBarStore()
 const { isMenuOpen, currentRouteName } = storeToRefs(navBarStore)
 const { toggleMenu } = navBarStore
 
-const { locale } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 
 const handleHighlight = (routeName: string) => {
   if (currentRouteName.value === routeName) return highlightColor.value

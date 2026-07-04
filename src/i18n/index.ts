@@ -9,6 +9,14 @@ export default createI18n({
   legacy: false,
   messages: {
     en: {
+      nav: {
+        about: 'About',
+        experience: 'Experience',
+        portfolio: 'Portfolio',
+        contact: 'Contact',
+        resume: 'Resume',
+        cv: 'CV',
+      },
       about: {
         h1: ABOUT_TEXTS.en.H1,
         title: ABOUT_TEXTS.en.TITLE,
@@ -37,6 +45,14 @@ export default createI18n({
       },
     },
     fr: {
+      nav: {
+        about: 'À propos',
+        experience: 'Expérience',
+        portfolio: 'Portfolio',
+        contact: 'Contact',
+        resume: 'CV',
+        cv: 'CV',
+      },
       about: {
         h1: ABOUT_TEXTS.fr.H1,
         title: ABOUT_TEXTS.fr.TITLE,
