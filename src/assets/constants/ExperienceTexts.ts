@@ -17,7 +17,17 @@ export const EXPERIENCE_TEXTS = {
         description: `I'm currently working as a Front-end and Mobile Developer at startup Seven on their product OpenAleph.
         I'm part of the dev team and participate in the development of the Frontend of the application with framework
          Vue.js, and the mobile application with framework Flutter.`,
-        subjects: ['Vue.js', 'Javascript', 'Flutter', 'Dart', 'Git', 'Gitlab', 'Docker', 'Agile'],
+        subjects: [
+          'Vue.js',
+          'Javascript',
+          'Typescript',
+          'Flutter',
+          'Dart',
+          'Git',
+          'Gitlab',
+          'Docker',
+          'Agile',
+        ],
       },
       {
         title: 'Junior Fullstack Developer',
@@ -139,11 +149,24 @@ export const EXPERIENCE_TEXTS = {
       {
         title: 'Développeur Frontend & Mobile',
         company: 'Seven',
-        tags: [{ name: `2025-aujourd'hui` }, { name: 'Paris' }, { name: 'France' }],
+        tags: [
+          { name: `2025-aujourd'hui` },
+          { name: 'Paris' },
+          { name: 'France' },
+        ],
         description: `Je travaille actuellement en tant que Developpeur Frontend et Mobile chez Seven.
         Je suis membre de l'équipe Tech et participe au developpement de l'application web OpenAleph avec le 
         framework Vue.js, et de l'application mobile avec le framework Flutter.`,
-        subjects: ['Vue.js', 'Javascript', 'Flutter', 'Dart', 'Git', 'Gitlab', 'Docker', 'Agile'],
+        subjects: [
+          'Vue.js',
+          'Javascript',
+          'Flutter',
+          'Dart',
+          'Git',
+          'Gitlab',
+          'Docker',
+          'Agile',
+        ],
       },
       {
         title: 'Développeur Fullstack junior',
@@ -198,7 +221,12 @@ export const EXPERIENCE_TEXTS = {
         ],
         description: `Gestion des systèmes informatiques de la Junior, rédaction de conventions d’études, suivi de missions, 
         mission interne de révisions de templates pour des conventions d’études réalisées par la Junior.`,
-        subjects: ['Google Workspace', 'Microsoft Office', 'Gestion de projet', 'Relation client'],
+        subjects: [
+          'Google Workspace',
+          'Microsoft Office',
+          'Gestion de projet',
+          'Relation client',
+        ],
       },
     ],
     education: [
