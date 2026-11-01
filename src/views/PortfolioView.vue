@@ -8,14 +8,14 @@
       <span class="portfolio__content--title">Portfolio</span>
       <div class="portfolio__content--cards">
         <ThemedCard
-          v-for="(item, index) in content"
-          :key="index"
-          :title="rt(item.title)"
-          :tags="item.tags"
-          :description="rt(item.description)"
-          :links="item.links"
-          :left="rt(item.left)"
-          :github="rt(item.github)"
+          v-for="(project, index) in PORTFOLIO_PROJECTS"
+          :key="project.key"
+          :title="project.title"
+          :tags="project.tags"
+          :description="t(`portfolio.projects.${project.key}`)"
+          :links="project.links"
+          :left="String(index % 2 === 0)"
+          :github="project.github"
         />
       </div>
     </div>
@@ -24,12 +24,9 @@
 
 <script setup lang="ts">
 import './PortfolioView.scss'
-import type { ThemedCardContent } from '@/types.ts'
-import { computed, type ComputedRef } from 'vue'
+import { PORTFOLIO_PROJECTS } from '@assets/constants/PortfolioTexts.ts'
 import ThemedCard from '@components/ThemedCard/ThemedCard.vue'
 
 import { useI18n } from 'vue-i18n'
-const { t, tm, rt } = useI18n()
-
-const content: ComputedRef<ThemedCardContent[]> = computed(() => tm('portfolio.content'))
+const { t } = useI18n()
 </script>

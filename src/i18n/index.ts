@@ -35,7 +35,7 @@ export default createI18n({
       portfolio: {
         title: PORTFOLIO_TEXTS.en.title,
         description: PORTFOLIO_TEXTS.en.description,
-        content: PORTFOLIO_TEXTS.en.content,
+        projects: PORTFOLIO_TEXTS.en.projects,
       },
       contact: {
         title: 'Get in touch',
@@ -71,7 +71,7 @@ export default createI18n({
       portfolio: {
         title: PORTFOLIO_TEXTS.fr.title,
         description: PORTFOLIO_TEXTS.fr.description,
-        content: PORTFOLIO_TEXTS.fr.content,
+        projects: PORTFOLIO_TEXTS.fr.projects,
       },
       contact: {
         title: 'Contact',

@@ -18,6 +18,14 @@ export interface ThemedCardContent {
   links: Image[]
 }
 
+export interface Project {
+  key: string
+  title: string
+  github: string
+  tags: Tag[]
+  links?: Image[]
+}
+
 export interface WorkCardContent {
   title: string
   company: string
