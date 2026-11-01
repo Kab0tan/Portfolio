@@ -41,14 +41,6 @@
         </ElCol>
         <ElCol :span="8" :offset="6">
           <div class="nav-right">
-            <ThemedSwitch
-              v-model:model-value="locale"
-              :is-icon="false"
-              active-text="en"
-              inactive-text="fr"
-              :bg-color="isLight"
-            />
-            <ThemedSwitch v-model:model-value="isLight" :active-icon="Sunny" :inactive-icon="Moon" />
             <a :href="resumeEnURL" target="_blank" rel="noopener noreferrer">
               <button class="nav-btn--resume">
                 {{ t('nav.resume') }}
@@ -61,6 +53,14 @@
                 <FlagIcon code="fr" />
               </button>
             </a>
+            <ThemedSwitch
+              v-model:model-value="locale"
+              :is-icon="false"
+              active-text="en"
+              inactive-text="fr"
+              :bg-color="isLight"
+            />
+            <ThemedSwitch v-model:model-value="isLight" :active-icon="Sunny" :inactive-icon="Moon" />
           </div>
         </ElCol>
       </ElRow>

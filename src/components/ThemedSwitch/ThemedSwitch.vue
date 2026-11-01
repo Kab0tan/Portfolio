@@ -13,7 +13,7 @@
         <inactiveIcon v-if="isToggled" />
         <activeIcon v-else />
       </ElIcon>
-      <span v-else :style="{ fontSize: `${size / 2}px` }">
+      <span v-else style="font-size: 16px">
         <span v-if="isToggled">{{ activeText }}</span>
         <span v-else>{{ inactiveText }}</span>
       </span>

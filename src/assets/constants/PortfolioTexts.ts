@@ -3,6 +3,7 @@ import deezerImageUrl from '/src/assets/images/deezer.jpg?url'
 import spotifyImageUrl from '/src/assets/images/spotify.png?url'
 import quizImageUrl from '/src/assets/images/quizium.jpg?url'
 import histoImageUrl from '/src/assets/images/histoProject.png?url'
+import customRetroTermImageUrl from '/src/assets/images/customRetroTerm.png?url'
 
 export const PORTFOLIO_TEXTS = {
   en: {
@@ -12,6 +13,28 @@ export const PORTFOLIO_TEXTS = {
      projects whenever inspiration strikes. If you have any questions on one of those projects, feel free to contact me,
      I'll be happy to answer !`,
     content: [
+      {
+        title: 'custom-retro-term',
+        tags: [
+          { name: 'Electron', bgColor: '#47848F', txtColor: 'white' },
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'WebGL', bgColor: '#990000', txtColor: 'white' },
+          { name: 'xterm.js', bgColor: '#2D2E2C', txtColor: 'white' },
+        ],
+        description: `A retro CRT terminal for Windows, macOS and Linux, inspired by cool-retro-term.
+         Screen curvature, bloom, scanlines and amber, green or cyan phosphors are rendered through a WebGL pipeline.
+         Live panels sit next to the shell (system stats, kernel log, audio spectrum, device map),
+         and you can write your own as one small sandboxed JavaScript plugin. Still a work in progress.`,
+        links: [
+          {
+            src: customRetroTermImageUrl,
+            link: 'https://github.com/Kab0tan/custom-retro-term',
+          },
+        ],
+        left: 'true',
+        github: 'https://github.com/Kab0tan/custom-retro-term',
+      },
       {
         title: 'Kanji no Kabe',
         tags: [
@@ -28,8 +51,26 @@ export const PORTFOLIO_TEXTS = {
             link: 'https://github.com/Kab0tan/KanjiNoKabe/',
           },
         ],
-        left: 'true',
+        left: 'false',
         github: 'https://github.com/Kab0tan/KanjiNoKabe/',
+      },
+      {
+        title: 'Foodex',
+        tags: [
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'Tailwind CSS', bgColor: '#38BDF8' },
+          { name: 'Supabase', bgColor: '#3ECF8E' },
+          { name: 'PostgreSQL', bgColor: '#336791', txtColor: 'white' },
+          { name: 'TanStack Query', bgColor: '#FF4154', txtColor: 'white' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+        ],
+        description: `A personal meal planner: a recipe catalogue, a drag-and-drop weekly plan,
+         and a shopping list built from it automatically. Each user only sees their own data.
+         There is no application backend: Supabase handles the database, authentication and photo storage,
+         and Row Level Security enforces access directly in Postgres. Deployed on Vercel.`,
+        left: 'true',
+        github: '',
       },
       {
         title: 'Quizium',
@@ -118,6 +159,28 @@ export const PORTFOLIO_TEXTS = {
        je serai ravi d'y répondre !`,
     content: [
       {
+        title: 'custom-retro-term',
+        tags: [
+          { name: 'Electron', bgColor: '#47848F', txtColor: 'white' },
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'WebGL', bgColor: '#990000', txtColor: 'white' },
+          { name: 'xterm.js', bgColor: '#2D2E2C', txtColor: 'white' },
+        ],
+        description: `Un terminal rétro façon écran CRT pour Windows, macOS et Linux, inspiré de cool-retro-term.
+         La courbure de l'écran, le bloom, les scanlines et les phosphores ambre, vert ou cyan sont rendus via un pipeline WebGL.
+         Des panneaux en direct s'affichent à côté du shell (stats système, logs du noyau, spectre audio, carte des périphériques),
+         et vous pouvez créer les vôtres sous forme d'un petit plugin JavaScript sandboxé. Projet toujours en cours de développement.`,
+        links: [
+          {
+            src: customRetroTermImageUrl,
+            link: 'https://github.com/Kab0tan/custom-retro-term',
+          },
+        ],
+        github: 'https://github.com/Kab0tan/custom-retro-term',
+        left: 'true',
+      },
+      {
         title: 'Kanji no Kabe',
         tags: [
           { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
@@ -134,6 +197,25 @@ export const PORTFOLIO_TEXTS = {
           },
         ],
         github: 'https://github.com/Kab0tan/KanjiNoKabe/',
+        left: 'false',
+      },
+      {
+        title: 'Foodex',
+        tags: [
+          { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+          { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
+          { name: 'Tailwind CSS', bgColor: '#38BDF8' },
+          { name: 'Supabase', bgColor: '#3ECF8E' },
+          { name: 'PostgreSQL', bgColor: '#336791', txtColor: 'white' },
+          { name: 'TanStack Query', bgColor: '#FF4154', txtColor: 'white' },
+          { name: 'Pinia', bgColor: '#f7df65' },
+        ],
+        description: `Un planificateur de repas personnel : un catalogue de recettes, un planning hebdomadaire
+         en glisser-déposer et une liste de courses générée automatiquement à partir de celui-ci.
+         Chaque utilisateur ne voit que ses propres données. Pas de backend applicatif : Supabase gère la base de données,
+         l'authentification et le stockage des photos, et la Row Level Security contrôle les accès directement dans Postgres.
+         Déployé sur Vercel.`,
+        github: '',
         left: 'true',
       },
       {
