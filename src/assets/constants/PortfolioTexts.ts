@@ -5,6 +5,7 @@ import spotifyImageUrl from '/src/assets/images/spotify.png?url'
 import quizImageUrl from '/src/assets/images/quizium.jpg?url'
 import histoImageUrl from '/src/assets/images/histoProject.png?url'
 import customRetroTermImageUrl from '/src/assets/images/customRetroTerm.png?url'
+import foodexImageUrl from '/src/assets/images/foodex.webp?url'
 
 const TAGS = {
   vue: { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
@@ -69,6 +70,12 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       TAGS.postgresql,
       TAGS.tanstackQuery,
       TAGS.pinia,
+    ],
+    links: [
+      {
+        src: foodexImageUrl,
+        link: 'https://foodex-mu.vercel.app/demo/recipes',
+      },
     ],
     github: '',
   },
