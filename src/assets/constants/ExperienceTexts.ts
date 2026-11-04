@@ -14,19 +14,31 @@ export const EXPERIENCE_TEXTS = {
         title: 'Front-end & Mobile Developer',
         company: 'Seven',
         tags: [{ name: '2025-now' }, { name: 'Paris' }, { name: 'France' }],
-        description: `I'm currently working as a Front-end and Mobile Developer at startup Seven on their product OpenAleph.
-        I'm part of the dev team and participate in the development of the Frontend of the application with framework
-         Vue.js, and the mobile application with framework Flutter.`,
+        description: `Full-stack developer at Seven, working on OpenAleph, a HR SaaS platform. 
+        As part of the dev team, I develop features across the entire application, from frontend to backend.
+         Our stack includes Vue.js 3 and TypeScript for the web application, Ruby on Rails for the backend,
+        and React Native for mobile development. I also maintain our shared design system, which ensures a
+          consistent user interface across the different applications. Beyond feature development, I also work closely
+          with the product team to break down requirements into development tasks,
+            improve code quality and maintainability, and streamline our development and testing processes using AI-assisted tools.`,
         subjects: [
           'Vue.js',
-          'Javascript',
-          'Typescript',
-          'Flutter',
-          'Dart',
+          'TypeScript',
+          'JavaScript',
+          'Ruby on Rails',
+          'React Native',
+          'Pinia',
+          'Vuetify',
+          'Tailwind CSS',
+          'Design Systems',
+          'Storybook',
+          'Vitest',
           'Git',
-          'Gitlab',
+          'GitLab CI/CD',
           'Docker',
+          'Jira',
           'Agile',
+          'AI-assisted development',
         ],
       },
       {
@@ -154,18 +166,28 @@ export const EXPERIENCE_TEXTS = {
           { name: 'Paris' },
           { name: 'France' },
         ],
-        description: `Je travaille actuellement en tant que Developpeur Frontend et Mobile chez Seven.
-        Je suis membre de l'équipe Tech et participe au developpement de l'application web OpenAleph avec le 
-        framework Vue.js, et de l'application mobile avec le framework Flutter.`,
+        description: `Développeur Full-stack chez Seven, je participe au développement d’OpenAleph, une plateforme SaaS dédiée à la gestion des ressources humaines.
+Au sein de l’équipe de développement, je conçois et développe des fonctionnalités sur l’ensemble de l’application, aussi bien côté frontend que backend. Nous utilisons Vue.js 3 et TypeScript pour l’application web, Ruby on Rails pour le backend et React Native pour le développement mobile.
+Je contribue également à la maintenance et à l’évolution de notre design system partagé, afin de garantir une expérience utilisateur cohérente entre nos différentes applications.
+Je travaille en étroite collaboration avec l’équipe produit pour traduire les besoins fonctionnels en tâches de développement concrètes. Je participe aussi à l’amélioration de la qualité et de la maintenabilité du code, ainsi qu’à l’optimisation de nos processus de développement et de test, notamment grâce à l’utilisation d’outils IA.`,
         subjects: [
           'Vue.js',
-          'Javascript',
-          'Flutter',
-          'Dart',
+          'TypeScript',
+          'JavaScript',
+          'Ruby on Rails',
+          'React Native',
+          'Pinia',
+          'Vuetify',
+          'Tailwind CSS',
+          'Design Systems',
+          'Storybook',
+          'Vitest',
           'Git',
-          'Gitlab',
+          'GitLab CI/CD',
           'Docker',
+          'Jira',
           'Agile',
+          'Développement assisté par IA',
         ],
       },
       {
