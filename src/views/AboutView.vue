@@ -7,14 +7,22 @@
           <span class="about__header--subtitle">
             Justin Leddet<span class="highlight">.</span>
           </span>
-          <span class="about__header--subtitle" v-html="t('about.title')"></span>
-          <span class="about__header--description" v-html="t('about.description')"></span>
+          <span class="about__header--subtitle">
+            {{ t('about.title') }}<span class="highlight">.</span>
+          </span>
+          <i18n-t keypath="about.description" tag="span" scope="global" class="about__header--description">
+            <template #ense3><span class="highlight">Grenoble-INP ENSE3</span></template>
+            <template #phelma><span class="highlight">Grenoble-INP PHELMA</span></template>
+            <template #web>
+              <span class="highlight">{{ t('about.webDevelopment') }}</span>
+            </template>
+          </i18n-t>
         </div>
       </ElCol>
       <ElCol :span="8">
         <div class="about__header__col">
           <div class="about__header__img-container">
-            <img src="@/assets/images/pdp.webp" class="about__header__img" alt="Justin Leddet" />
+            <img src="@/assets/images/pdp.jpg" class="about__header__img" alt="Justin Leddet" />
             <div class="about__header__img--overlay" @click="handleLinkLinkedin">
               <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
             </div>
@@ -26,11 +34,19 @@
       <div class="about__header__text-container">
         <span class="about__header--title"> {{ t('about.h1') }} </span>
         <span class="about__header--subtitle"> Justin Leddet<span class="highlight">.</span> </span>
-        <span class="about__header--subtitle" v-html="t('about.title')"></span>
-        <span class="about__header--description" v-html="t('about.description')"></span>
+        <span class="about__header--subtitle">
+          {{ t('about.title') }}<span class="highlight">.</span>
+        </span>
+        <i18n-t keypath="about.description" tag="span" scope="global" class="about__header--description">
+          <template #ense3><span class="highlight">Grenoble-INP ENSE3</span></template>
+          <template #phelma><span class="highlight">Grenoble-INP PHELMA</span></template>
+          <template #web>
+            <span class="highlight">{{ t('about.webDevelopment') }}</span>
+          </template>
+        </i18n-t>
         <div class="about__header__col">
           <div class="about__header__img-container">
-            <img src="@/assets/images/pdp.webp" class="about__header__img" alt="Justin Leddet" />
+            <img src="@/assets/images/pdp.jpg" class="about__header__img" alt="Justin Leddet" />
             <div class="about__header__img--overlay" @click="handleLinkLinkedin">
               <FontAwesomeIcon icon="fa-brands fa-linkedin" class="about__header__img--icon" />
             </div>

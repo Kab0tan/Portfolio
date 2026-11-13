@@ -21,6 +21,7 @@ export default createI18n({
         h1: ABOUT_TEXTS.en.H1,
         title: ABOUT_TEXTS.en.TITLE,
         description: ABOUT_TEXTS.en.DESCRIPTION,
+        webDevelopment: ABOUT_TEXTS.en.WEB_DEVELOPMENT,
         content: ABOUT_TEXTS.en.CONTENT,
       },
       experience: {
@@ -57,6 +58,7 @@ export default createI18n({
         h1: ABOUT_TEXTS.fr.H1,
         title: ABOUT_TEXTS.fr.TITLE,
         description: ABOUT_TEXTS.fr.DESCRIPTION,
+        webDevelopment: ABOUT_TEXTS.fr.WEB_DEVELOPMENT,
         content: ABOUT_TEXTS.fr.CONTENT,
       },
       experience: {
