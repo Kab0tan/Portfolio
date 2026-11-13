@@ -1,0 +1,112 @@
+// Space around the modal, and the room the frame itself takes around the image
+$gutter: 20px;
+$border: 2px;
+$inner-padding: 10px;
+$lift: 8px;
+$frame-space: 2 * ($border + $inner-padding) + $lift;
+$radius: 30px;
+// Close button sits inside the top-right corner; its radius follows the modal's corner curve
+$close-inset: 20px;
+$close-size: 40px;
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  // Highest possible value: always above the navbars (9999), Element Plus popups and everything else
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $gutter;
+
+  // Backdrop on its own layer so it can fade while the frame stays opaque
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: color-mix(in srgb, var(--background-color) 70%, transparent);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  &--visible::before {
+    opacity: 1;
+  }
+
+  &__frame {
+    // Closed state: a dot at the centre of the clicked image (--origin-x/y are offsets from the viewport centre)
+    opacity: 0;
+    transform: translate(var(--origin-x, 0), var(--origin-y, 0)) scale(0);
+    transition:
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.3s ease;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border: $border solid var(--btn-border-color);
+    border-radius: $radius;
+    padding-top: $lift;
+    // Same raised look as the image buttons in the cards
+    background-color: color-mix(in srgb, var(--card-bg-color) 90%, white);
+    box-shadow:
+      -6px -20px 35px color-mix(in srgb, var(--card-bg-color) 90%, transparent),
+      -6px -10px 15px color-mix(in srgb, var(--card-bg-color) 90%, white),
+      -20px 0px 30px color-mix(in srgb, var(--card-bg-color) 95%, white),
+      6px 20px 10px color-mix(in srgb, var(--card-bg-color) 90%, black);
+  }
+
+  &--visible &__frame {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__frame {
+      transition: opacity 0.2s ease;
+      transform: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: $inner-padding;
+    border-radius: 28px;
+    background-color: var(--card-bg-color);
+    transform: translateY(-$lift);
+  }
+
+  &__img {
+    display: block;
+    max-width: calc(100vw - #{2 * $gutter + $frame-space});
+    max-height: calc(100vh - #{2 * $gutter + $frame-space});
+    max-height: calc(100dvh - #{2 * $gutter + $frame-space});
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    cursor: zoom-out;
+  }
+
+  &__close {
+    position: absolute;
+    top: $close-inset;
+    right: $close-inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $close-size;
+    height: $close-size;
+    border: $border solid var(--btn-border-color);
+    border-radius: $radius - $close-inset + $border;
+    background-color: color-mix(in srgb, var(--card-bg-color) 85%, transparent);
+    color: var(--text-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}

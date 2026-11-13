@@ -6,6 +6,8 @@ import quizImageUrl from '/src/assets/images/quizium.jpg?url'
 import histoImageUrl from '/src/assets/images/histoProject.png?url'
 import customRetroTermImageUrl from '/src/assets/images/customRetroTerm.png?url'
 import foodexImageUrl from '/src/assets/images/foodex.webp?url'
+import rameoImageUrl from '/src/assets/images/rameo.webp?url'
+import rameoFullImageUrl from '/src/assets/images/rameo-overview.png?url'
 
 const TAGS = {
   vue: { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
@@ -31,10 +33,38 @@ const TAGS = {
   expo: { name: 'Expo', bgColor: '#000020', txtColor: 'white' },
   python: { name: 'Python', bgColor: '#4584b6', txtColor: '#ffde57' },
   flask: { name: 'Flask', bgColor: '#3BABC3' },
+  nextjs: { name: 'Next.js', bgColor: '#000000', txtColor: 'white' },
+  react: { name: 'React', bgColor: '#61DAFB' },
+  maplibre: { name: 'MapLibre GL', bgColor: '#396CB2', txtColor: 'white' },
+  vitest: { name: 'Vitest', bgColor: '#729B1B', txtColor: 'white' },
+  prim: { name: 'IDFM PRIM API (SIRI)', bgColor: '#1B2A55', txtColor: 'white' },
+  gtfs: { name: 'GTFS', bgColor: '#6B7280', txtColor: 'white' },
 } satisfies Record<string, Tag>
 
 // Language-independent data. Each project's description lives in PORTFOLIO_TEXTS under its key.
 export const PORTFOLIO_PROJECTS: Project[] = [
+  {
+    key: 'rameo',
+    title: 'Rameo',
+    tags: [
+      TAGS.nextjs,
+      TAGS.typescript,
+      TAGS.react,
+      TAGS.maplibre,
+      TAGS.vitest,
+      TAGS.prim,
+      TAGS.gtfs,
+    ],
+    links: [
+      {
+        src: rameoImageUrl,
+        link: '',
+        zoom: true,
+        fullSrc: rameoFullImageUrl,
+      },
+    ],
+    github: '',
+  },
   {
     key: 'customRetroTerm',
     title: 'custom-retro-term',
@@ -92,19 +122,6 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     github: 'https://github.com/Kab0tan/Quizium',
   },
   {
-    key: 'portfolio',
-    title: 'Portfolio',
-    tags: [
-      TAGS.vue,
-      TAGS.scss,
-      TAGS.vite,
-      TAGS.pinia,
-      TAGS.typescript,
-      TAGS.elementPlus,
-    ],
-    github: 'https://github.com/Kab0tan/Portfolio',
-  },
-  {
     key: 'histoProject',
     title: 'HistoProject',
     tags: [
@@ -121,9 +138,23 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       {
         src: histoImageUrl,
         link: '',
+        zoom: true,
       },
     ],
     github: '',
+  },
+  {
+    key: 'portfolio',
+    title: 'Portfolio',
+    tags: [
+      TAGS.vue,
+      TAGS.scss,
+      TAGS.vite,
+      TAGS.pinia,
+      TAGS.typescript,
+      TAGS.elementPlus,
+    ],
+    github: 'https://github.com/Kab0tan/Portfolio',
   },
   {
     key: 'deezerToSpotify',
@@ -151,6 +182,8 @@ export const PORTFOLIO_TEXTS = {
      projects whenever inspiration strikes. If you have any questions on one of those projects, feel free to contact me,
      I'll be happy to answer !`,
     projects: {
+      rameo: `A live map of the Paris metro that shows where every train is,
+         estimated from real-time arrival times. Still a work in progress.`,
       customRetroTerm: `A retro CRT terminal for Windows, macOS and Linux, inspired by cool-retro-term.
          Screen curvature, bloom, scanlines and amber, green or cyan phosphors are rendered through a WebGL pipeline.
          Live panels sit next to the shell (system stats, kernel log, audio spectrum, device map),
@@ -179,6 +212,8 @@ export const PORTFOLIO_TEXTS = {
       me vient. Si vous avez des questions sur l'un de ces projets, n'hésitez pas à me contacter,
        je serai ravi d'y répondre !`,
     projects: {
+      rameo: `Une carte en direct du métro parisien qui affiche la position de chaque rame,
+         estimée à partir des horaires de passage en temps réel. Projet toujours en cours de développement.`,
       customRetroTerm: `Un terminal rétro façon écran CRT pour Windows, macOS et Linux, inspiré de cool-retro-term.
          La courbure de l'écran, le bloom, les scanlines et les phosphores ambre, vert ou cyan sont rendus via un pipeline WebGL.
          Des panneaux en direct s'affichent à côté du shell (stats système, logs du noyau, spectre audio, carte des périphériques),

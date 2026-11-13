@@ -21,13 +21,17 @@
     -6px -10px 15px color-mix(in srgb, var(--card-bg-color) 90%, white),
     -20px 0px 30px color-mix(in srgb, var(--card-bg-color) 95%, white),
     6px 20px 10px color-mix(in srgb, var(--card-bg-color) 90%, black);
-  transition: 0.13s ease-in-out;
+  transition: box-shadow 0.13s ease-in-out;
   cursor: pointer;
-  &:hover {
+  // Images without a link keep their resting look but don't react to hover
+  &:not(.button--static):hover {
     box-shadow: none;
     .button__content {
       transform: translate(0, 0);
     }
+  }
+  &--static {
+    cursor: default;
   }
   &__content {
     width: 100%;
