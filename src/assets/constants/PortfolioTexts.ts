@@ -10,7 +10,7 @@ import rameoImageUrl from '/src/assets/images/rameo.webp?url'
 import rameoFullImageUrl from '/src/assets/images/rameo-overview.png?url'
 
 const TAGS = {
-  vue: { name: 'Vue3', bgColor: '#41B883', txtColor: 'white' },
+  vue: { name: 'Vue.js', bgColor: '#41B883', txtColor: 'white' },
   typescript: { name: 'TypeScript', bgColor: '#3178C6', txtColor: 'white' },
   javascript: { name: 'Javascript', bgColor: '#f7df65' },
   elementPlus: { name: 'Element Plus', bgColor: '#409EFF', txtColor: 'white' },

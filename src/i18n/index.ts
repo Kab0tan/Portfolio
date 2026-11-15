@@ -44,6 +44,15 @@ export default createI18n({
           "Feel free to contact me ! I'm open to all opportunities, or if you have any question on a project i'll be happy to answer.",
         popover: 'Copy email',
       },
+      hello: {
+        role: 'Software Engineer · Fullstack',
+        cvEn: 'Resume (English)',
+        cvFr: 'Resume (French)',
+        saveContact: 'Save my contact',
+        copyEmail: 'Copy mail',
+        emailCopied: 'Email copied!',
+        portfolio: 'See my portfolio',
+      },
     },
     fr: {
       nav: {
@@ -80,6 +89,15 @@ export default createI18n({
         subtitle:
           "N'hésitez pas à me contacter ! Je suis ouvert aux opportunités et je serai ravi de répondre à vos questions sur un projet si vous en avez.",
         popover: "Copier l'email",
+      },
+      hello: {
+        role: 'Ingénieur logiciel · Fullstack',
+        cvEn: 'CV (anglais)',
+        cvFr: 'CV (français)',
+        saveContact: 'Enregistrer mon contact',
+        copyEmail: 'Copier email',
+        emailCopied: 'Email copié !',
+        portfolio: 'Voir mon portfolio',
       },
     },
   },

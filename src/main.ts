@@ -15,9 +15,27 @@ import 'vue3-flag-icons/styles'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faDownload, faArrowRightLong, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import {
+  faDownload,
+  faArrowRightLong,
+  faBars,
+  faXmark,
+  faAddressCard,
+  faEnvelope,
+  faCopy,
+} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-library.add(faDownload, faGithub, faLinkedin, faArrowRightLong, faBars, faXmark)
+library.add(
+  faDownload,
+  faGithub,
+  faLinkedin,
+  faArrowRightLong,
+  faBars,
+  faXmark,
+  faAddressCard,
+  faEnvelope,
+  faCopy,
+)
 
 const app = createApp(App)
 

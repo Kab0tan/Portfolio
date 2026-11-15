@@ -11,7 +11,7 @@ export const EXPERIENCE_TEXTS = {
     educationTitle: 'Education',
     career: [
       {
-        title: 'Front-end & Mobile Developer',
+        title: 'Fullstack Developer',
         company: 'Seven',
         tags: [{ name: '2025-now' }, { name: 'Paris' }, { name: 'France' }],
         description: `Full-stack developer at Seven, working on OpenAleph, a HR SaaS platform. 
@@ -49,7 +49,7 @@ export const EXPERIENCE_TEXTS = {
         Frontend and Backend development of their web platform using the 
         frameworks Vue3.js and Ruby on Rails.`,
         subjects: [
-          'Vue3',
+          'Vue.js',
           'Ruby on Rails',
           'Javascript',
           'Ruby',
@@ -159,7 +159,7 @@ export const EXPERIENCE_TEXTS = {
     educationTitle: 'Formation',
     career: [
       {
-        title: 'Développeur Frontend & Mobile',
+        title: 'Développeur Fullstack',
         company: 'Seven',
         tags: [
           { name: `2025-aujourd'hui` },
@@ -198,7 +198,7 @@ Je travaille en étroite collaboration avec l’équipe produit pour traduire le
         le développement Frontend et Backend de leur plateforme web sous les 
         framework Vue3.js et Ruby on Rails.`,
         subjects: [
-          'Vue3',
+          'Vue.js',
           'Ruby on Rails',
           'Javascript',
           'Ruby',

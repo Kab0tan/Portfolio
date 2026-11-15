@@ -27,6 +27,12 @@ const router = createRouter({
       name: 'contact',
       component: ContactView,
     },
+    {
+      path: '/hello',
+      name: 'hello',
+      component: () => import('@/views/HelloView.vue'),
+      meta: { hideNav: true },
+    },
   ],
 })
 
